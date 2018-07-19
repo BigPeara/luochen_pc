@@ -1,0 +1,26 @@
+/*免费时间*/
+.banner-container{height: 151px;background: url(img/free-bg.png) no-repeat;background-size: 100% 100%;}
+.banner-container .title{margin-right: 59px;}
+.banner-container .free-title{color: #FF4192;font-size: 36px;line-height: 1;margin: 42px 0 0 72px;}
+.banner-container .free-sub-title{color: #FF4192;font-size: 14px;line-height: 1;margin: 12px 0 0 72px;}
+.banner-container .free-bar{width: 60px;height: 60px;border-radius: 10px;-webkit-border-radius: 10px;-ms-border-radius: 10px;-o-border-radius: 10px;-moz-border-radius: 10px;background-color: #FF72AE;margin:51px 0 0 20px;font-size: 14px;text-align: center;color: #fff;}
+.banner-container .free-nubmer{font-size: 24px;display: block;line-height: 38px;}
+.banner-container .free-active{background-color: #fff;color: #FF72AE;}
+
+/*书本列表*/
+.bookList-container .book-container{background-color: #fff;margin-bottom: 20px;}
+.bookList-container .book-container .book-list{padding-bottom: 31px;}
+.bookList-container .book-container .book-item{border-bottom: 1px solid #F1F1F1;margin: 0 30px;padding: 30px 0;}
+.bookList-container .book-container .book-cover{width: 108px;height: 154px;}
+.bookList-container .book-container .book-info{margin-left: 23px;width: 640px;}
+.bookList-container .book-container .book-name{line-height: 1;margin-top: 13px;}
+.bookList-container .book-container .book-author{margin-top: 15px;}
+.bookList-container .book-container .book-label{font-size: 12px;color: #999;margin:15px 0 0 20px;}
+.bookList-container .book-container .book-state{font-size: 12px;color: #999;margin: 15px 0 0 20px;}
+.bookList-container .book-container .book-hasLook{font-size: 12px;color: #999;margin: 15px 0 0 20px;}
+.bookList-container .book-container .book-introduce{font-size: 14px;color: #666;line-height: 24px;margin-top: 18px;}
+.bookList-container .book-container .book-update{font-size: 12px;color: #FF4192;line-height: 1;margin-top: 12px;}
+.bookList-container .book-container .book-hasUpdate{width: 8px;height: 8px;background-color: #FF4192;display: inline-block;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%;margin-right: 6px;vertical-align: 0.1ex;}
+.bookList-container .book-container .book-update-time{color: #B5B5B5;font-size: 12px;margin-left: 19px;}
+.bookList-container .book-container .btn-bookshelf{display: block; margin-top: 55px; width: 130px;height: 34px;border-radius: 34px;}
+.bookList-container .book-container .btn-read{display: block; width: 130px;height: 34px;border-radius: 17px;margin-top: 20px;}

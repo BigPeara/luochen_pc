@@ -1,0 +1,108 @@
+.author-detail-info{
+    padding: 20px 55px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+.author-head-info{
+    position: relative;
+    margin-right: 37px
+}
+.author-detail-head{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.author-detail-crown{
+    width: 32px;
+    height: 31px;
+    position: absolute;
+    left: -5px;
+    top: -14px;
+}
+.author-detail-label{
+    width: 41px;
+    height: 17px;
+    line-height: 17px;
+    color: #fff;
+    background-color: #ffba41;
+    border-radius: 9px;
+    -webkit-border-radius:9px;
+    -moz-border-radius:9px;
+    -ms-border-radius:9px;
+    -o-border-radius:9px;
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    font-size: 12px;
+    text-align: center;
+}
+.author-detail-box{
+    height: 55px;
+    margin-top:17px;
+    padding-right: 35px;
+    border-right: 1px solid #F1F1F1; 
+}
+.author-detail-name{
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 10px;
+}
+.author-detail-sign{
+    font-size: 12px;
+    color: #999;
+    margin-top: 15px;
+}
+.author-production{
+    height: 90px;
+    line-height: 90px;
+    font-size: 12px;
+    color: #999;
+    padding-left: 30px;
+}
+.author-production-space{
+    margin: 0 42px;
+}
+.author-detail-container .book-container{background-color: #fff;margin-bottom: 20px;}
+.author-detail-container .book-container .book-list{padding-bottom: 31px;}
+.author-detail-container .book-container .book-item{border-bottom: 1px solid #F1F1F1;padding: 30px 0;}
+.author-detail-container .book-container .book-cover{width: 108px;height: 154px;}
+.author-detail-container .book-container .book-cover img{width: 108px;height: 154px;display: block;}
+.author-detail-container .book-container .book-info{margin-left: 23px;width: 640px;}
+.author-detail-container .book-container .book-name{line-height: 1;margin-top: 13px;color: #333;font-size: 16px;}
+.author-detail-container .book-container .book-author{margin-top: 15px;}
+.author-detail-container .book-container .book-label{font-size: 12px;color: #999;margin:15px 0 0 20px;}
+.author-detail-container .book-container .book-state{font-size: 12px;color: #999;margin: 15px 0 0 20px;}
+.author-detail-container .book-container .book-hasLook{font-size: 12px;color: #999;margin: 15px 0 0 20px;}
+.author-detail-container .book-container .book-introduce{font-size: 14px;color: #666;line-height: 24px;margin-top: 18px;}
+.author-detail-container .book-container .book-update{font-size: 12px;color: #FF4192;line-height: 1;margin-top: 12px;}
+.author-detail-container .book-container .book-hasUpdate{width: 8px;height: 8px;background-color: #FF4192;display: inline-block;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%;margin-right: 6px;vertical-align: 0.1ex;}
+.author-detail-container .book-container .book-update-time{color: #B5B5B5;font-size: 12px;margin-left: 19px;}
+.author-detail-container .book-container .btn-default{margin-top: 20px;display: block; width: 130px;height: 34px;line-height: 34px;border-radius: 17px;text-align: center;}
+.author-detail-container .book-container .btn-primary{margin-top: 55px;width: 130px;height: 34px;border-radius: 17px;font-size: 16px;}
+/*.author-detail-container .book-container .btn-primary{font-size: 16px;color: #333;padding-left: 30px;height: 59px;line-height: 59px;border-bottom:1px solid #f1f1f1}*/
+.serialize-book-all{
+     font-size: 16px;
+     color: #333;
+     padding-left: 30px;
+     margin-top: 10px;
+ }
+ .serialize-book-all .serialize-book-amount{
+     font-size: 12px;
+     color: #999
+ }
+ .book-item-box{
+   padding: 0 30px;
+ }
+ .hot-serialize{
+     padding: 0 30px;
+     height: 58px;
+     line-height: 58px;
+     font-size: 16px;
+     color: #333333;
+     border-bottom: 1px solid #F1F1F1;
+ }

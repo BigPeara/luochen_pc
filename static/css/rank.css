@@ -1,0 +1,121 @@
+/*排行榜*/
+.rank-container .rank-list{width: 204px;background-color: #fff;margin-right: 20px;border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;-ms-border-radius: 4px;-o-border-radius: 4px;}
+.rank-container .rank-list .rank-item{position: relative; font-size: 16px;color: #333;line-height: 48px;}
+.rank-container .rank-list .rank-item .icon-rank{margin:12px 18px 0 35px;}
+.rank-container .rank-list .rank-item .icon-rank-click{width: 22px;}
+.rank-container .rank-list .rank-item.active a{color: #FF4192}
+.rank-container .rank-list .rank-item.active::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-width: 4px 0 4px 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #FF4192;
+}
+
+.rank-container .rank-list .rank-item.active .icon-rank-all,
+.rank-container .rank-list .rank-item.active .icon-rank-click,
+.rank-container .rank-list .rank-item.active .icon-rank-zan,
+.rank-container .rank-list .rank-item.active .icon-rank-chase,
+.rank-container .rank-list .rank-item.active .icon-rank-pay,
+.rank-container .rank-list .rank-item.active .icon-rank-new,
+.rank-container .rank-list .rank-item.active .icon-rank-newBook,
+.rank-container .rank-list .rank-item.active .icon-rank-over,
+.rank-container .rank-list .rank-item .icon-pink-all,
+.rank-container .rank-list .rank-item .icon-pink-click,
+.rank-container .rank-list .rank-item .icon-pink-zan,
+.rank-container .rank-list .rank-item .icon-pink-chase,
+.rank-container .rank-list .rank-item .icon-pink-pay,
+.rank-container .rank-list .rank-item .icon-pink-new,
+.rank-container .rank-list .rank-item .icon-pink-newBook,
+.rank-container .rank-list .rank-item .icon-pink-over
+{
+    display: none;
+}
+.rank-container .rank-list .rank-item.active .icon-pink-all,
+.rank-container .rank-list .rank-item.active .icon-pink-click,
+.rank-container .rank-list .rank-item.active .icon-pink-zan,
+.rank-container .rank-list .rank-item.active .icon-pink-chase,
+.rank-container .rank-list .rank-item.active .icon-pink-pay,
+.rank-container .rank-list .rank-item.active .icon-pink-new,
+.rank-container .rank-list .rank-item.active .icon-pink-newBook,
+.rank-container .rank-list .rank-item.active .icon-pink-over,
+.rank-container .rank-list .rank-item .icon-rank-all,
+.rank-container .rank-list .rank-item .icon-rank-click,
+.rank-container .rank-list .rank-item .icon-rank-zan,
+.rank-container .rank-list .rank-item .icon-rank-chase,
+.rank-container .rank-list .rank-item .icon-rank-pay,
+.rank-container .rank-list .rank-item .icon-rank-new,
+.rank-container .rank-list .rank-item .icon-rank-newBook,
+.rank-container .rank-list .rank-item .icon-rank-over
+{
+    display: block;
+}
+
+/*sidebar*/
+.sidebar-container{width: 856px;}
+.sidebar-container .sidebar{width: 283.8px;background-color: #fff;margin-bottom: 30px;border-right: 1px solid #F1F1F1;border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;-ms-border-radius: 4px;-o-border-radius: 4px;}
+.sidebar-container .sidebar .sidebar-title{font-size: 18px;line-height: 22px;color: #FF4192;padding:21px 0 0 26px;font-weight: 600;}
+.sidebar-container .sidebar .sidebar-item{margin-top: 22px;transition: all .15s ease;}
+.sidebar-container .sidebar .sidebar-link{margin-top: 22px;font-size: 14px;line-height: 24px;text-align: center;padding-bottom: 15px;}
+.sidebar-container .sidebar .sidebar-link span{display: block;color: #999;position: relative;text-align: center;}
+.sidebar-container .sidebar .sidebar-link span:after,.sidebar-container .sidebar .sidebar-link span:before{content: '';position: absolute;top: 55%;background-color: #F8F2F2;width: 48px;height: 1px; }
+.sidebar-container .sidebar .sidebar-link span:after{right: 18%;}
+.sidebar-container .sidebar .sidebar-link span:before{left: 18%;}
+.sidebar-container .sidebar .sidebar-link:hover span{color: #FF4192;}
+.sidebar-container .sidebar .sidebar-link:hover span:after,
+.sidebar-container .sidebar .sidebar-link:hover span:before{background-color: #FF4192;}
+
+.sidebar-container .sidebar .sidebar-item-rank{font-size: 18px;color: #999;font-style: italic;margin-left: 28px;width: 20px;height: 20px;background-color: #fff;}
+.sidebar-container .sidebar .sidebar-item:nth-child(1) .sidebar-item-rank{background-color: #FFCA4B;width: 20px;height: 20px;line-height: 20px;text-indent: 2.5px;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;}
+.sidebar-container .sidebar .sidebar-item:nth-child(2) .sidebar-item-rank{background-color: #FF974B;width: 20px;height: 20px;line-height: 20px;text-indent: 2.5px;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;}
+.sidebar-container .sidebar .sidebar-item:nth-child(3) .sidebar-item-rank{background-color: #FF604B;width: 20px;height: 20px;line-height: 20px;text-indent: 2.5px;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;}
+.sidebar-container .sidebar .book-item{margin-left: 24px;display: none;}
+.sidebar-container .sidebar .book-cover{width: 82px;height: 115px;border-radius: 4px;-webkit-border-radius: 4px;-ms-border-radius: 4px;-moz-border-radius: 4px;-o-border-radius: 4px;overflow: hidden;}
+.sidebar-container .sidebar .book-cover img{display: block;width: 100%;height: 100%;}
+.sidebar-container .sidebar .book-info{margin-left: 10px;width: 118px;}
+.sidebar-container .sidebar .book-name{font-size: 14px;color: #333;line-height: 1;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.sidebar-container .sidebar .book-author{font-size: 12px;color: #999;line-height: 1;margin-top: 15px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.sidebar-container .sidebar .book-label{font-size: 12px;color: #FF4192;line-height: 1;margin-top: 49px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.sidebar-container .sidebar .book-label a{display: inline-block; margin: 0 3px;color: #FF4192;}
+.sidebar-container .sidebar .sidebar-book-name{margin-left: 26px;font-size: 14px;color: #333;line-height: 24px;width: 200px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+
+.sidebar-container .sidebar .sidebar-item.active .book-item{display: block}
+.sidebar-container .sidebar .sidebar-item.active .sidebar-book-name{display: none}
+
+
+/*点击榜*/
+.rank-container .rank-list{width: 204px;background-color: #fff;margin-right: 20px;border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;-ms-border-radius: 4px;-o-border-radius: 4px;}
+.rank-container .rank-list .rank-item{font-size: 16px;color: #333;line-height: 48px;}
+.rank-container .rank-list .rank-item .icon-rank{margin:12px 18px 0 35px;}
+.rank-container .rank-list .rank-item .icon-rank-click{width: 22px;}
+
+
+/*列表*/
+.rank-bar-container{background-color: #fff;width: 856px;border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;-ms-border-radius: 4px;-o-border-radius: 4px;margin-bottom: 30px;}
+.rank-bar-container .rank-title{padding: 26px 27px 24px 21px;}
+.rank-bar-container .rank-sub-title{font-size: 24px;font-weight: bold;color: #333;line-height: 1;}
+.rank-bar-container .rank-date{font-size: 12px;color: #999;padding-top: 15px;}
+.rank-bar-container .update-container .book-container .book-item-head{background-color: #F8F8F8;}
+.rank-bar-container .update-container .book-container .book-item:nth-child(2n+1){background-color: #F8F8F8;}
+.rank-bar-container .update-container .book-container .book-bar{width: 14.25%;height: 51px;line-height: 50px;font-size: 14px;color: #333;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;color: #333;text-align: center;}
+.rank-bar-container .update-container .book-container .book-normal{font-size: 12px;}
+.rank-bar-container .update-container .book-container .book-update{color: #999;}
+.rank-bar-container .update-container .book-container .book-name{display: block;width: 120px;font-size: 14px;line-height: 50px;}
+.rank-bar-container .update-container .book-container .book-author{display: block;width: 102px;height: inherit;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin: 0 auto;color: #333;}
+.rank-bar-container .update-container .book-container .book-label{display: block;width: 102px;height: inherit;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin: 0 auto;}
+.rank-bar-container .update-container .book-container .book-bar-l{text-align: left;}
+.rank-bar-container .update-container .book-container .book-bar-c{width: 40px;display: inline-block;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.rank-bar-container .update-container .book-container .book-rank-1{width:20px;height:20px;line-height: 20px;display: inline-block;background-color:#FFCA4B;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius: 2px;-ms-border-radius: 2px;-o-border-radius: 2px;}
+.rank-bar-container .update-container .book-container .book-rank-2{width:20px;height:20px;line-height: 20px;display: inline-block;background-color:#FF974B;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius: 2px;-ms-border-radius: 2px;-o-border-radius: 2px;}
+.rank-bar-container .update-container .book-container .book-rank-3{width:20px;height:20px;line-height: 20px;display: inline-block;background-color:#FF604B;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius: 2px;-ms-border-radius: 2px;-o-border-radius: 2px;}
+
+/*分页组件样式*/
+.click-rank-pagination .pagination{
+    margin: 30px;
+    text-align: right;
+}

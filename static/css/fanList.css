@@ -1,0 +1,122 @@
+.fan-list-container{
+    width: 1080px;
+    height: auto;
+    background-color: #fff;
+    margin: 20px 0;
+    padding-bottom: 25px;
+}
+.fan-list-book-name{
+    height: 59px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 16px;
+    color: #666;
+    padding-left: 40px;
+    line-height: 64px;
+}
+.fan-list{
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+.fan-list-left{
+    padding: 0 55px 0 69px;
+    border-right: 1px solid #f1f1f1;
+    padding-bottom: 12px;
+}
+.fan-list-book-detail {
+    width: 230px;
+    margin-top: 24px;
+}
+.fan-list-headline{
+    margin-bottom: 24px;
+}
+.fan-list-main{
+    padding: 0 71px 0 66px;
+    border-right: 1px solid #f1f1f1;
+    padding-bottom: 12px;
+}
+.fan-list-right{
+    padding: 0 63px 0 63px;
+    padding-bottom: 12px;
+}
+
+.fan-list-book{
+    width: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.fan-list-nickname{
+    width: 163px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.fan-list-garde{
+    width: 35px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.fan-list-book-detail .fan-list-nickname{
+    text-align: left;
+    width: 163px;
+    font-size: 12px;
+    color: #333;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    overflow : hidden;
+    height: 20px;
+    line-height: 20px;
+
+}
+.fan-list-book-detail .fan-list-rank{
+    font-size: 18px;
+    color: #999;
+    font-style: italic;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-indent: -3.5px;
+
+}
+.fan-list-book-detail .fan-list-garde{
+    width: 35px;
+    height: 16px;
+    line-height: 15.5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #ff5d4b;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.fan-list-book-detail .fan-list-rank .rank-first,.fan-list-book-detail .fan-list-rank .rank-second,.fan-list-book-detail .fan-list-rank .rank-third{
+    background-color: #FFCA4B;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: -3.5px;
+    color: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    font-style: italic;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+}
+.fan-list-book-detail .fan-list-rank .rank-second{
+    background-color: #FF974B;
+}
+.fan-list-book-detail .fan-list-rank .rank-third{
+    background-color: #FF604B;
+}

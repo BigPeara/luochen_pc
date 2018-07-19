@@ -1,0 +1,296 @@
+.pay-container {
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.pay-user-info {
+    padding: 20px 55px;
+    border: 1px solid #F1F1F1;
+}
+
+.user-info-head {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 37px
+}
+
+.user-info-box {
+    margin-top: 25px;
+}
+
+.user-info-name {
+    font-size: 12px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.pay-for-choose-item {
+    width: 100%;
+}
+
+.info-detail-money {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+    width: 800px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.pay-detail-info {
+    width: 945px;
+    height: 470px;
+    margin: 0 auto
+}
+
+.info-detail-line {
+    margin: 0 30px;
+}
+
+.pay-detail-way-hint {
+    font-size: 16px;
+    color: #333;
+    padding: 25px 0 40px 60px;
+}
+
+.pay-detail-ways {
+    padding-left: 20px;
+}
+
+.pay-detail-ways-item {
+    height: 50px;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.pay-alipay-img {
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.pay-weixin-img {
+    padding: 0 30px;
+    margin-top: 15px;
+}
+
+.pay-bank-img {
+    padding: 0 30px;
+    margin-top: 18px;
+}
+
+.border-active {
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+    background-color: #fdfdfd;
+}
+
+.ways-all-box {
+    width: 100%;
+    height: 420px;
+    background-color: #fdfdfd;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+    margin-top: -1px;
+    z-index: 1;
+}
+
+.ways-all-box .pay-for-choose-item {
+    display: none;
+}
+
+.ways-all-box .payMode {
+    display: block;
+}
+
+.pay-hint-title {
+    font-size: 14px;
+    color: #999;
+    padding: 25px 0 0px 50px;
+}
+
+.choose-money-way-left {
+    width: 486px;
+    height: 318px;
+    border-right: 1px solid #F1F1F1;
+    padding: 30px 50px 0 59px;
+}
+
+.choose-money-way-left .choose-money-detail-box {
+    margin: 0;
+}
+
+.choose-money-detail-box .choose-money-detail-item {
+    margin-bottom: 35px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 20px;
+}
+
+.choose-money-detail-box .choose-money-detail-item .money-selected-light {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #FF4192;
+    margin: 3px;
+    display: none;
+}
+
+.choose-money-selected {
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    margin-top: 1px;
+}
+
+.choose-money-detail-box {
+    margin: 36px 79px 0;
+}
+
+.choose-money-detail-box .choose-selected-active .money-selected-light {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #FF4192;
+    margin: 3px;
+    display: block;
+}
+
+.book-money {
+    font-size: 16px;
+    color: #000;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.pay-for-rmb {
+    font-size: 12px;
+    color: #999;
+    margin-left: 4px;
+}
+
+.last-pay-hint {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    margin: 50px 0 0 20px;
+}
+
+.need-read-money {
+    font-size: 24px;
+    color: #FF4192;
+    font-weight: 700;
+}
+
+.need-pay-rmb {
+    font-size: 12px;
+    color: #999;
+}
+
+.choose-money-way-right {
+    overflow: hidden;
+}
+
+.user-er-hint {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pay-er-img {
+    margin: 50px auto 0;
+    display: block;
+}
+
+.icon-center-jump {
+    margin: 14.5px 10px 19px 20px;
+}
+
+.btns-change-item {
+    width: 100%;
+    margin: 30px 0 40px 0;
+    height: 45px;
+    display: none;
+}
+
+.link-three-pay {
+    display: block;
+    width: 242px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    background-color: #FF4192;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.three-jump-hint {
+    text-decoration: underline;
+}
+
+
+/* 银行 */
+
+.bank-pay-for-all {
+    padding: 38px 0 130px 78px;
+}
+
+.bank-pay-hint {
+    padding-left: 78px;
+}
+
+.pay-for {
+    width: 242px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.link-three-pay:hover {
+    color: #ffffff;
+}
+
+.link-three-pay:active {
+    background: #FF41B9;
+}
+
+
+/*  */
+
+.adv-container {
+    width: 1080px;
+    height: 73px;
+    background: url(../img/pay-adv.png) no-repeat;
+    margin-bottom: 20px;
+}
+
+.adv-detail {
+    padding: 15px 50px 0;
+}
+
+.pay-adv {
+    font-size: 12px;
+    color: #9D6909;
+    line-height: 24px;
+}

@@ -1,0 +1,8 @@
+body,html{background-color:#fff}
+.error{position:absolute;top:50%;margin-top:-240px;width:100%;min-width:720px;text-align:center}
+.error .banner{display:block;margin:0 auto 58px auto;width: 703px;height: 396px;}
+.error p{color:#999;font-size:18px}
+.error-title{margin-top:-55px}
+.error .control{margin-top:29px}
+.error .control a{margin:0 37px;color:#2a87e5;font-size:16px}
+.error .control a img,.error .control a span{display:inline-block;vertical-align:middle}

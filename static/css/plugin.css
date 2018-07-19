@@ -1,0 +1,43 @@
+/*进度条*/
+.luochen-progress{
+    overflow: hidden;
+    line-height: 20px;
+}
+.luochen-progress-bar{
+    margin-top: 4px;
+    float: left;
+    width: 140px;
+    height: 12px;
+    background-color: #F8F2F2;
+    border-radius: 6px;
+}
+.luochen-progress-inner{
+    width: 50px;
+    height: 12px;
+    background-color: #FF4192;
+    border-radius: 6px;
+}
+.luochen-progress-text{
+    float: left;
+    margin-left: 18px;
+    height: 20px;
+    font-size: inherit;
+    font-size: 0;
+}
+.luochen-progress-percentage{
+    display: inline-block;
+    vertical-align: middle;
+    color: #ff4192;
+    font-size: 12px;
+}
+.luochen-progress-total{
+    display: inline-block;
+    vertical-align: middle;
+    color: #333333;
+    font-size: 12px;
+}
+.luochen-progress-total:before{
+    margin: 0 5px;
+    content: '/';
+    display: inline-block;
+}

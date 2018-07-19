@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>落尘文学_原创网络文学,免费手机小说阅读</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="落尘文学提供恐怖小说、灵异小说、玄幻小说、武侠小说、都市小说等小说在线阅读、手机阅读,无弹窗。">
+    <meta name="keywords" content="落尘文学,小说排行榜,小说排行,无弹窗,手机阅读">
+    <meta name="robots" content="all">
+    <meta name="googlebot" content="all">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../static/icon/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+    <style>
+        .dialog .dialog-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 10000;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #fff;
+            width: 335px;
+            border-radius: 4px;
+            -webkit-boder-radius: 4px;
+            -moz-border-radius: 4px;
+            -o-border-radius: 4px;
+            -ms-border-radius: 4px;
+            padding: 0 86px;
+        }
+        
+        .dialog .dialog-container .dialog-logo {
+            width: 160px;
+            margin: 40px auto 0;
+        }
+        
+        .dialog .dialog-container .login-list {
+            margin-top: 15px;
+        }
+        
+        .dialog .dialog-container .form {
+            width: 100%;
+        }
+        
+        .dialog .dialog-container .form-title,
+        .dialog .dialog-container .login-title {
+            font-size: 14px;
+            color: #999;
+            text-align: center;
+            position: relative;
+        }
+        
+        .dialog .dialog-container .form-title span:before,
+        .form-title span:after,
+        .dialog .dialog-container .login-title span:before,
+        .login-title span:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            background-color: #E8E8E8;
+            width: 28%;
+            height: 1px;
+        }
+        
+        .dialog .dialog-container .form-title span:before,
+        .dialog .dialog-container .login-title span:before {
+            left: 2%;
+        }
+        
+        .dialog .dialog-container .form-title span:after,
+        .dialog .dialog-container .login-title span:after {
+            right: 2%;
+        }
+        
+        .dialog .dialog-container .login-item {
+            display: block;
+            margin: 15px 50px 15px 0;
+        }
+        
+        .dialog .dialog-container .login-item-right {
+            margin-right: 0;
+        }
+        
+        .dialog .dialog-container .userName {
+            margin-top: 18px;
+        }
+        
+        .dialog .dialog-container .passWord {
+            margin-top: 10px;
+        }
+        
+        .dialog .dialog-container .passWord,
+        .dialog .dialog-container .userName {
+            border: 1px solid #E8E8E8;
+            width: 100%;
+            height: 46px;
+        }
+        
+        .dialog .dialog-container .icon-password,
+        .dialog .dialog-container .icon-name {
+            width: 19px;
+            height: 21px;
+            display: block;
+            margin: 12px;
+        }
+        
+        .dialog .dialog-container .icon-password img,
+        .dialog .dialog-container .icon-name img {
+            display: block;
+            width: 100%;
+        }
+        
+        .dialog .dialog-container .input-text {
+            height: 100%;
+            width: 290px;
+            display: block;
+            color: #333;
+        }
+        
+        .dialog .dialog-container .auto-login {
+            line-height: 1;
+            margin: 19px 0;
+        }
+        
+        .dialog .dialog-container .btn-login {
+            display: block;
+            width: 100%;
+            height: 46px;
+            background-color: #FF4192;
+            color: #fff;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -o-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            font-size: 16px;
+            letter-spacing: 4px;
+        }
+        
+        .dialog .dialog-container .register-msg {
+            font-size: 14px;
+            color: #333;
+            display: block;
+            margin: 18px 0 28px;
+        }
+        
+        .dialog .dialog-container .btn-close {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-position: -9px -8px;
+            z-index: 10001;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <div class="wrapper">
+        <img src="../static/img/container-bg.png" class="img-fixed" />
+        <!-- 公共头部 -->
+        <div class="header">
+            <div class="container-center clearfix">
+                <div class="login fleft clearfix">
+                    <div class="login-head fleft"><img src="../static/img/headImg.png" data-img="headImg.png" /></div>
+                    <a href="javascript:;" class="login-text fleft">登录</a>
+                    <p class="login-line fleft">|</p>
+                    <a href="register.html" class="register fleft">注册</a>
+                </div>
+                <div class="header-bar fright clearfix">
+                    <a href="readHistory.html" class="fleft header-text"><span class="icon-small icon-pen"></span>阅读记录<span class="up"></span></a>
+                    <a class="fleft line-bar">|</a>
+                    <a href="myBookshelf.html" class="fleft header-text"><span class="icon-small icon-bookrack"></span>书架</a>
+                    <a class="fleft line-bar">|</a>
+                    <a href="pay.html" class="fleft header-text"><span class="icon-small icon-money"></span>充值</a>
+                    <a class="fleft line-bar">|</a>
+                    <a href="personal.html" class="fleft header-text"><span class="icon-small icon-center"></span>作者中心</a>
+                    <a class="fleft line-bar">|</a>
+                </div>
+            </div>
+        </div>
+        <!-- 公共logo -->
+        <a href="book-detail.html" class="logo"><img src="../static/img/logo@2x.png" /></a>
+        <!-- 公共导航 -->
+        <div class="nav">
+            <div class="container-center">
+                <div class="fleft nav-menu clearfix">
+                    <a href="index.html" class="nav-menu-item fleft active">首页</a>
+                    <a href="bookstore.html" class="nav-menu-item fleft">书库</a>
+                    <a href="rank.html" class="nav-menu-item fleft">排行榜</a>
+                    <a href="manito.html" class="nav-menu-item fleft">大神</a>
+                    <a href="https://www.luochen.com/manhua/" class="nav-menu-item fleft">漫画</a>
+                </div>
+                <div class="search fright">
+                    <input type="text" placeholder="请输入关键字..." class="search-box" />
+                    <span class="icon-small icon-search" onclick="window.location.href='search.html'"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="container">
+            <!-- banner -->
+            <div class="page-container clearfix">
+                <div class="banner fleft" id="banner"></div>
+                <div class="column fright">
+                    <div class="column-title"><span class="icon-small icon-inform"></span>公告</div>
+                    <p class="column-text"><a href="notice.html">[公告]&nbsp;落尘微信，关注有好礼相...</a></p>
+                    <p class="column-text"><a href="notice.html">[资讯]&nbsp;坐酌冷冷水新书来袭</a></p>
+                    <p class="column-text"><a href="notice.html">[公告]&nbsp;作家福利星计划</a></p>
+                    <p class="column-text"><a href="notice.html">[公告]&nbsp;落尘微信，关注有礼</a></p>
+                    <p class="column-text"><a href="notice.html">[公告]&nbsp;落尘微信，关注有礼</a></p>
+                </div>
+            </div>
+            <!-- 主编力荐 -->
+            <div class="page-container editor-container">
+                <div class="book-container">
+                    <div class="book-title clearfix">
+                        <p class="fleft book-title-name"><span class="icon-small icon-pencil"></span>主编力荐</p>
+                        <a href="javascript:;" class="fright book-title-bar"><span class="icon-color icon-change"></span>换一批</a>
+                    </div>
+                    <div class="book-list clearfix">
+                        <div class="book-item fleft clearfix">
+                            <a href="book-detail.html">
+                                <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                <div class="book-info fright">
+                                    <div class="book-name">步步为妃公主为妃</div>
+                                    <div class="book-author">[著] 作者名</div>
+                                    <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft clearfix">
+                            <a href="book-detail.html">
+                                <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                <div class="book-info fright">
+                                    <div class="book-name">步步为妃公主为妃</div>
+                                    <div class="book-author">[著] 作者名</div>
+                                    <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft clearfix">
+                            <a href="book-detail.html">
+                                <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                <div class="book-info fright">
+                                    <div class="book-name">步步为妃公主为妃</div>
+                                    <div class="book-author">[著] 作者名</div>
+                                    <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 广告条 -->
+            <div class="page-container">
+                <a href="book-detail.html" class="adv-bar">
+                    <img src="../static/img/adv.png" />
+                </a>
+            </div>
+            <!-- 限时免费 -->
+            <div class="page-container free-container">
+                <div class="book-container">
+                    <div class="book-list clearfix">
+                        <div class="free-item fleft">
+                            <div class="free-title">限时免费</div>
+                            <div class="free-name">VIP章节免费畅读</div>
+                            <p class="free-pic"><img src="../static/img/time.png" /></p>
+                            <div class="free-time">0天 12:52:36</div>
+                            <a href="vip-free.html" class="free-link">进入限免频道 ></a>
+                        </div>
+                        <div class="book-item fleft">
+                            <div class="book-cover"><img src="../static/img/book.png"></div>
+                            <div class="book-name">王妃千千岁</div>
+                            <div class="book-line">5落尘币／千字</div>
+                            <a href="book-detail.html" class="book-link">免费阅读</a>
+                        </div>
+                        <div class="book-item fleft">
+                            <div class="book-cover"><img src="../static/img/book.png"></div>
+                            <div class="book-name">王妃千千岁</div>
+                            <div class="book-line">5落尘币／千字</div>
+                            <a href="book-detail.html" class="book-link">免费阅读</a>
+                        </div>
+                        <div class="book-item fleft">
+                            <div class="book-cover"><img src="../static/img/book.png"></div>
+                            <div class="book-name">王妃千千岁</div>
+                            <div class="book-line">5落尘币／千字</div>
+                            <a href="book-detail.html" class="book-link">免费阅读</a>
+                        </div>
+                        <div class="book-item fleft">
+                            <div class="book-cover"><img src="../static/img/book.png"></div>
+                            <div class="book-name">王妃千千岁</div>
+                            <div class="book-line">5落尘币／千字</div>
+                            <a href="book-detail.html" class="book-link">免费阅读</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 热门精品 -->
+            <div class="page-container hot-container">
+                <div class="book-container">
+                    <div class="book-title clearfix">
+                        <p class="fleft book-title-name"><span class="icon-color icon-hot"></span>热门精品</p>
+                        <a href="#" class="fright book-title-bar">更多>></a>
+                    </div>
+                    <div class="clearfix hot-clear">
+                        <div class="hot-list fleft">
+                            <div class="hot-banner"></div>
+                            <div class="book-name">云胡不喜</div>
+                            <div class="book-info clearfix">
+                                <p class="fleft book-item">【著】作者</p>
+                                <p class="fleft book-item">进度：已完结</p>
+                                <p class="fleft book-item">类型：宅斗</p>
+                                <p class="fleft book-item">字数：100万</p>
+                            </div>
+                            <div class="book-introduce">简然以为自己嫁个了一个普通男人，谁料这个男人摇身一变，成了她公司的总裁大人。不仅如此，他还是亚洲首富帝国集团最神秘的继承者</div>
+                            <a href="#" class="book-link">书籍详情</a>
+                        </div>
+                        <div class="book-list fleft clearfix">
+                            <div class="book-item fleft">
+                                <div class="book-cover"><img src="../static/img/book.png"></div>
+                                <div class="book-name">一曲弦歌醉小说</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </div>
+                            <div class="book-item fleft">
+                                <div class="book-cover"><img src="../static/img/book.png"></div>
+                                <div class="book-name">一曲弦歌醉小说</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </div>
+                            <div class="book-item fleft">
+                                <div class="book-cover"><img src="../static/img/book.png"></div>
+                                <div class="book-name">一曲弦歌醉小说</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </div>
+                            <div class="book-item fleft">
+                                <div class="book-cover"><img src="../static/img/book.png"></div>
+                                <div class="book-name">一曲弦歌醉小说</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </div>
+                            <div class="book-item fleft">
+                                <div class="book-cover"><img src="../static/img/book.png"></div>
+                                <div class="book-name">一曲弦歌醉小说</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </div>
+                            <div class="book-item fleft">
+                                <div class="book-cover"><img src="../static/img/book.png"></div>
+                                <div class="book-name">一曲弦歌醉小说</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </div>
+                            <div class="book-item fleft">
+                                <div class="book-cover"><img src="../static/img/book.png"></div>
+                                <div class="book-name">一曲弦歌醉小说</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </div>
+                            <div class="book-item fleft">
+                                <div class="book-cover"><img src="../static/img/book.png"></div>
+                                <div class="book-name">一曲弦歌醉小说</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 广告条 -->
+            <div class="page-container">
+                <a href="#" class="adv-bar">
+                    <img src="../static/img/adv.png" />
+                </a>
+            </div>
+            <!-- 大神作品 -->
+            <div class="page-container sharp-container">
+                <div class="book-container">
+                    <div class="book-list clearfix">
+                        <div class="sharp-item fleft"><img src="../static/img/book.png" /></div>
+                        <div class="book-item fleft">
+                            <a href="book-detail.html">
+                                <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                <div class="book-name">王妃千千岁</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft">
+                            <a href="book-detail.html">
+                                <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                <div class="book-name">王妃千千岁</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft">
+                            <a href="book-detail.html">
+                                <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                <div class="book-name">王妃千千岁</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft">
+                            <a href="book-detail.html">
+                                <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                <div class="book-name">王妃千千岁</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 热门分类 -->
+            <div class="page-container sort-container">
+                <div class="book-container">
+                    <div class="book-title clearfix">
+                        <p class="fleft book-title-name"><span class="icon-color icon-classify"></span>热门分类</p>
+                        <a href="bookstore.html.html" class="fright book-title-bar">更多>></a>
+                    </div>
+                    <div class="book-list clearfix">
+                        <div class="sort-item fleft">
+                            <div class="sort-title clearfix">
+                                <div class="sort-sub-title fleft">玄幻小说</div>
+                                <span class="icon-color icon-fire fright"></span>
+                            </div>
+                            <div class="book-item clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为</div>
+                                        <div class="book-author">【著】作者名</div>
+                                        <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="book-common"><a href="book-detail.html">力王专宠</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠升水</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠去去去</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠阿斯达所多撒多</a></p>
+                        </div>
+                        <div class="sort-item fleft">
+                            <div class="sort-title clearfix">
+                                <div class="sort-sub-title fleft">玄幻小说</div>
+                                <span class="icon-color icon-ghost fright"></span>
+                            </div>
+                            <div class="book-item clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为</div>
+                                        <div class="book-author">【著】作者名</div>
+                                        <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="book-common"><a href="book-detail.html">力王专宠</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠升水</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠去去去</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠阿斯达所多撒多</a></p>
+                        </div>
+                        <div class="sort-item fleft">
+                            <div class="sort-title clearfix">
+                                <div class="sort-sub-title fleft">玄幻小说</div>
+                                <span class="icon-color icon-house fright"></span>
+                            </div>
+                            <div class="book-item clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为</div>
+                                        <div class="book-author">【著】作者名</div>
+                                        <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="book-common"><a href="book-detail.html">力王专宠</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠升水</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠去去去</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠阿斯达所多撒多</a></p>
+                        </div>
+                        <div class="sort-item fleft">
+                            <div class="sort-title clearfix">
+                                <div class="sort-sub-title fleft">玄幻小说</div>
+                                <span class="icon-color icon-spider fright"></span>
+                            </div>
+                            <div class="book-item clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为</div>
+                                        <div class="book-author">【著】作者名</div>
+                                        <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="book-common"><a href="book-detail.html">力王专宠</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠升水</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠去去去</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠阿斯达所多撒多</a></p>
+                        </div>
+                        <div class="sort-item fleft">
+                            <div class="sort-title clearfix">
+                                <div class="sort-sub-title fleft">玄幻小说</div>
+                                <span class="icon-color icon-sword fright"></span>
+                            </div>
+                            <div class="book-item clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为</div>
+                                        <div class="book-author">【著】作者名</div>
+                                        <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="book-common"><a href="book-detail.html">力王专宠</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠升水</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠去去去</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠阿斯达所多撒多</a></p>
+                        </div>
+                        <div class="sort-item fleft">
+                            <div class="sort-title clearfix">
+                                <div class="sort-sub-title fleft">玄幻小说</div>
+                                <span class="icon-color icon-through fright"></span>
+                            </div>
+                            <div class="book-item clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为</div>
+                                        <div class="book-author">【著】作者名</div>
+                                        <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="book-common"><a href="book-detail.html">力王专宠</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠升水</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠去去去</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠阿斯达所多撒多</a></p>
+                        </div>
+                        <div class="sort-item fleft">
+                            <div class="sort-title clearfix">
+                                <div class="sort-sub-title fleft">玄幻小说</div>
+                                <span class="icon-color icon-pagoda fright"></span>
+                            </div>
+                            <div class="book-item clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为</div>
+                                        <div class="book-author">【著】作者名</div>
+                                        <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="book-common"><a href="book-detail.html">力王专宠</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠升水</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠去去去</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠阿斯达所多撒多</a></p>
+                        </div>
+                        <div class="sort-item fleft">
+                            <div class="sort-title clearfix">
+                                <div class="sort-sub-title fleft">玄幻小说</div>
+                                <span class="icon-color icon-suspense fright"></span>
+                            </div>
+                            <div class="book-item clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为</div>
+                                        <div class="book-author">【著】作者名</div>
+                                        <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，她伤心买醉...</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="book-common"><a href="book-detail.html">力王专宠</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠升水</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠去去去</a></p>
+                            <p class="book-common"><a href="book-detail.html">力王专宠阿斯达所多撒多</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 新书上架 -->
+            <div class="page-container clearfix new-book-container">
+                <div class="book-container fleft">
+                    <div class="book-title clearfix">
+                        <p class="fleft book-title-name"><span></span>新书上架</p>
+                        <a href="bookstore.html" class="fright book-title-bar">更多>></a>
+                    </div>
+                    <div class="book-list clearfix">
+                        <div class="book-item fleft clearfix">
+                            <a href="book-detail.html">
+                                <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                <div class="book-info fleft">
+                                    <div class="book-name">步步为妃公主为妃</div>
+                                    <div class="book-author">[著] 作者名</div>
+                                    <div class="book-label">穿越 言情</div>
+                                    <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，酒吧里了权买心买醉</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft clearfix">
+                            <a href="book-detail.html">
+                                <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                <div class="book-info fleft">
+                                    <div class="book-name">步步为妃公主为妃</div>
+                                    <div class="book-author">[著] 作者名</div>
+                                    <div class="book-label">穿越 言情</div>
+                                    <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，酒吧里了权买心买醉</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft clearfix">
+                            <a href="book-detail.html">
+                                <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                <div class="book-info fleft">
+                                    <div class="book-name">步步为妃公主为妃</div>
+                                    <div class="book-author">[著] 作者名</div>
+                                    <div class="book-label">穿越 言情</div>
+                                    <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，酒吧里了权买心买醉</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft clearfix">
+                            <a href="book-detail.html">
+                                <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                <div class="book-info fleft">
+                                    <div class="book-name">步步为妃公主为妃</div>
+                                    <div class="book-author">[著] 作者名</div>
+                                    <div class="book-label">穿越 言情</div>
+                                    <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，酒吧里了权买心买醉</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft clearfix">
+                            <a href="book-detail.html">
+                                <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                <div class="book-info fleft">
+                                    <div class="book-name">步步为妃公主为妃</div>
+                                    <div class="book-author">[著] 作者名</div>
+                                    <div class="book-label">穿越 言情</div>
+                                    <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，酒吧里了权买心买醉</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft clearfix">
+                            <a href="book-detail.html">
+                                <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                <div class="book-info fleft">
+                                    <div class="book-name">步步为妃公主为妃</div>
+                                    <div class="book-author">[著] 作者名</div>
+                                    <div class="book-label">穿越 言情</div>
+                                    <div class="book-introduce">男友和妹妹在一起，她伤心买醉，酒吧里撞到了权倾一方的陆少铭和妹妹在一起，酒吧里了权买心买醉</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar fleft">
+                    <div class="sidebar-title"><span></span>点赞榜</div>
+                    <div class="sidebar-list">
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft sidebar-item-1">1</div>
+                            <div class="book-item fleft clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为妃</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                        <div class="book-label">穿越 言情</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft sidebar-item-2">2</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft sidebar-item-3">3</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">4</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">5</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">6</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">7</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">8</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">9</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">10</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 经典完本 -->
+            <div class="page-container end-book-container">
+                <div class="book-container">
+                    <div class="book-list clearfix">
+                        <div class="end-book-item fleft"><img src="../static/img/book.png" /></div>
+                        <div class="book-item fleft">
+                            <a href="book-detail.html">
+                                <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                <div class="book-name">王妃千千岁</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft">
+                            <a href="book-detail.html">
+                                <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                <div class="book-name">王妃千千岁</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft">
+                            <a href="book-detail.html">
+                                <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                <div class="book-name">王妃千千岁</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </a>
+                        </div>
+                        <div class="book-item fleft">
+                            <a href="book-detail.html">
+                                <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                <div class="book-name">王妃千千岁</div>
+                                <div class="book-author">[著] 作者名</div>
+                            </a>
+                        </div>
+                        <div class="btn-prev icon-color icon-prev"></div>
+                        <div class="btn-next icon-color icon-next"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 最近更新 -->
+            <div class="page-container update-container clearfix">
+                <div class="book-container fleft">
+                    <div class="book-title clearfix">
+                        <p class="fleft book-title-name"><span></span>最近更新</p>
+                        <a href="bookstore.html" class="fright book-title-bar">更多>></a>
+                    </div>
+                    <div class="book-list">
+                        <div class="book-item book-item-odd clearfix">
+                            <p class="fleft book-bar book-bar-l">书名</p>
+                            <p class="fleft book-bar book-bar-c">作者</p>
+                            <p class="fleft book-bar book-bar-c">最新章节</p>
+                            <p class="fleft book-bar book-bar-c">更新时间</p>
+                        </div>
+                        <div class="book-item book-item-even clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                        <div class="book-item book-item-odd clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                        <div class="book-item book-item-even clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                        <div class="book-item book-item-odd clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                        <div class="book-item book-item-even clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                        <div class="book-item book-item-odd clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                        <div class="book-item book-item-even clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                        <div class="book-item book-item-odd clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                        <div class="book-item book-item-even clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                        <div class="book-item book-item-odd clearfix">
+                            <p class="fleft book-bar book-bar-l">
+                                <span class="book-name"><a href="book-detail.html">[ 宫斗 ]乱世太子妃</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-author"><a href="book-detail.html">沧海不改，万</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-bar-c">
+                                <span class="book-label"><a href="book-detail.html">第七章：奖励</a></span>
+                            </p>
+                            <p class="fleft book-bar book-normal book-update book-bar-c">08-04 15:36</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar fleft">
+                    <div class="sidebar-title"><span></span>点赞榜</div>
+                    <div class="sidebar-list">
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft sidebar-item-1">1</div>
+                            <div class="book-item fleft clearfix">
+                                <a href="book-detail.html">
+                                    <div class="book-cover fleft"><img src="../static/img/book.png" /></div>
+                                    <div class="book-info fleft">
+                                        <div class="book-name">步步为妃公主为妃</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                        <div class="book-label">穿越 言情</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft sidebar-item-2">2</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft sidebar-item-3">3</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">4</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">5</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">6</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">7</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">8</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">9</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class="sidebar-item-rank fleft">10</div>
+                            <div class="sidebar-book-name fleft"><a href="book-detail.html">致命合约：老公太深情</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../components/layer/layer.js"></script>
+    <!-- <script type="text/javascript" src="../components/login/login.js"></script> -->
+    <script type="text/javascript" src="../components/swipe/swipe.js"></script>
+    <script>
+        var page = {
+            init: function() {
+                this.banner();
+                this.login();
+            },
+            banner: function() {
+                new lcSwipe("banner", {});
+            },
+            login: function() {
+                $(".login-text").click(function() {
+                    layer.open({
+                        type: 1,
+                        title: false,
+                        closeBtn: 0,
+                        shadeClose: true,
+                        skin: 'container',
+                        content: '<div class="dialog">' +
+                            '<div class="dialog-container">' +
+                            '<div class="dialog-logo"><img src="../static/img/s-logo.png" /></div>' +
+                            '<div class="login-list">' +
+                            '<p class="login-title"><span>第三方登录</span></p>' +
+                            '<div class="clearfix">' +
+                            '<a href="#" class="login-item fleft"><img src="../static/img/icon-qq.png" /></a>' +
+                            '<a href="#" class="login-item fleft"><img src="../static/img/icon-wechat.png" /></a>' +
+                            '<a href="#" class="login-item fleft"><img src="../static/img/icon-weibo.png" /></a>' +
+                            '<a href="#" class="login-item fleft login-item-right"><img src="../static/img/icon-baidu.png" /></a>' +
+                            '</div>' +
+                            '</div>' +
+                            '<form class="form">' +
+                            '<p class="form-title"><span>使用账号密码登录</span></p>' +
+                            '<div class="userName clearfix">' +
+                            '<span class="icon-name fleft"><img src="../static/img/icon-name.png"/></span>' +
+                            '<input class="fleft input-text" type="text" placeholder="请输入手机号、账号或邮箱" />' +
+                            '</div>' +
+                            '<div class="passWord clearfix">' +
+                            '<span class="icon-password fleft"><img src="../static/img/icon-password.png"/></span>' +
+                            '<input type="password" class="input-text fleft" placeholder="请输入密码" />' +
+                            '</div>' +
+                            '<div class="auto-login clearfix">' +
+                            '<p class="auto-radio fleft">' +
+                            '<span></span>' +
+                            '<span class="">自动登录</span>' +
+                            '</p>' +
+                            '<a href="#" class="fright">忘记密码？</a>' +
+                            '</div>' +
+                            '<input type="button" class="btn-login" value="登录" />' +
+                            '<a href="#" class="register-msg fright">点击注册</a>' +
+                            '</form>' +
+                            '<div class="btn-close icon-reward"></div>' +
+                            '</div>' +
+                            '</div>',
+                        success: function(layero, index) {
+                            $(".btn-close").click(function() {
+                                layer.close(index);
+                            })
+                        }
+                    });
+                })
+            }
+
+        }
+        page.init();
+    </script>
+</body>
+
+</html>

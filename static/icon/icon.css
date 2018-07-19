@@ -1,0 +1,757 @@
+.icon{
+    display: block;
+    background: url("img/login.png") no-repeat;
+    background-size: 218px 54px;
+}
+.icon-login-qq{
+    width: 46px;
+    height: 45px;
+    background-position: -8px -6px;
+}
+.icon-login-wx{
+    width: 46px;
+    height: 45px;
+    background-position: -60px -6px;
+}
+.icon-login-wb{
+    width: 46px;
+    height: 45px;
+    background-position: -112px -6px;
+}
+.icon-login-bd{
+    width: 46px;
+    height: 45px;
+    background-position: -164px -6px;
+}
+/*small*/
+.icon-small{
+    display: block;
+    background: url("img/small.png") no-repeat;
+    background-size: 281px 41px;
+}
+.icon-user{
+    width: 19px;
+    height: 21px;
+    background-position: -3px -5px;
+}
+.icon-key{
+    width: 17px;
+    height: 21px;
+    background-position: -34px -5px;
+}
+.icon-pen{
+    width: 16px;
+    height: 16px;
+    background-position: -69px -5px;
+}
+.icon-bookrack{
+    width: 17px;
+    height: 16px;
+    background-position: -94px -5px;
+}
+.icon-money{
+    width: 18px;
+    height: 19px;
+    background-position: -121px -5px;
+}
+.icon-p{
+    width: 18px;
+    height: 19px;
+    background-position: -148px -5px;
+}
+.icon-pencil{
+    width: 18px;
+    height: 19px;
+    background-position: -148px -5px;
+}
+.icon-selected{
+    width: 10px;
+    height: 8px;
+    background-position: -177px -5px;
+}
+.icon-search{
+    width: 25px;
+    height: 25px;
+    background-position: -192px -5px;
+}
+.icon-inform{
+    width: 20px;
+    height: 18px;
+    background-position: -221px -6px;
+}
+.icon-pencil{
+    width: 17px;
+    height: 19px;
+    background-position: -250px -5px;
+}
+/*color*/
+.icon-color{
+    display: block;
+    background: url("img/color.png") no-repeat;
+    background-size: 500px 60px;
+}
+.icon-change{
+    width: 12px;
+    height: 12px;
+    background-position: -8px -16px;
+}
+.icon-hot{
+    width: 15px;
+    height: 18px;
+    background-position: -28px -16px;
+}
+.icon-prev{
+    width: 24px;
+    height: 48px;
+    background-position: -51px -7px;
+}
+.icon-next{
+    width: 24px;
+    height: 48px;
+    background-position: -82px -8px;
+}
+.icon-classify{
+    width: 20px;
+    height: 20px;
+    background-position: -110px -16px;
+}
+.icon-fire{
+    width: 33px;
+    height: 40px;
+    background-position: -130px -11px;
+}
+.icon-ghost{
+    width: 35px;
+    height: 35px;
+    background-position: -166px -11px;
+}
+.icon-house{
+    width: 36px;
+    height: 45px;
+    background-position: -207px -10.5px;
+}
+.icon-spider{
+    width: 53px;
+    height: 36px;
+    background-position: -250px -4px;
+}
+.icon-sword{
+    width: 35px;
+    height: 45px;
+    background-position: -312px -2.5px;
+}
+.icon-through{
+    width: 50px;
+    height: 47px;
+    background-position: -364px 0;
+}
+.icon-pagoda{
+    width: 39px;
+    height: 31px;
+    background-position: -415px -5px;
+}
+.icon-suspense{
+    width: 39px;
+    height: 40px;
+    background-position: -451px -5px;
+}
+.icon-more{
+    display: block;
+    background: url("img/more04.png") no-repeat;
+    background-size: 500px 131px;
+}
+.icon-newBook{
+    width: 18px;
+    height: 18px;
+    background-position: -9px -11px;
+}
+.icon-crown{
+    width: 25px;
+    height: 18px;
+    background-position: -36px -11px;
+}
+.icon-vip{
+    width: 12px;
+    height: 12px;
+    background-position: -70px -13px;
+}
+.icon-clock{
+    width: 19px;
+    height: 19px;
+    background-position: -90px -9px;
+}
+.icon-sm-wx{
+    width: 20px;
+    height: 20px;
+    background-position: -115px -7px;
+}
+.icon-sm-wb{
+    width: 20px;
+    height: 20px;
+    background-position: -139px -7px;
+}
+.icon-sm-android{
+    width: 25px;
+    height: 25px;
+    background-position: -164px -7px;
+
+}
+.icon-sm-ios{
+    width: 25px;
+    height: 25px;
+    background-position: -194px -7px;
+}
+.icon-sm-phone{
+    width: 25px;
+    height: 25px;
+    background-position: -223px -9px;
+}
+.icon-bookmark{
+    width: 45px;
+    height: 25px;
+    background-position: -258px -2px;
+}
+.icon-top{
+    width: 12px;
+    height: 7px;
+    background-position: -315px -5px;
+}
+.icon-phone-read{
+    width: 13px;
+    height: 16px;
+    background-position: -340px -5px;
+}
+.icon-label-classify{
+    width: 45px;
+    height: 17px;
+    background-position: -364px -4.8px;
+}
+.icon-label-author{
+    width: 45px;
+    height: 17px;
+    background-position: -421px -5px;
+}
+.icon-label-read{
+    width: 45px;
+    height: 17px;
+    background-position: -6px -46.8px;
+}
+.icon-label-state{
+    width: 45px;
+    height: 17px;
+    background-position: -60px -46.8px;
+}
+.icon-label-number{
+    width: 45px;
+    height: 17px;
+    background-position: -115px -46.8px;
+}
+.icon-label-bookrack{
+    width: 45px;
+    height: 17px;
+    background-position: -169px -50px;
+}
+.icon-sm-star{
+    width: 14px;
+    height: 14px;
+    background-position: -225px -49px;
+}
+.icon-bubble{
+    width: 33px;
+    height: 40px;
+    background-position: -246px -39.5px;
+}
+.icon-indicate-book{
+    width: 13px;
+    height: 16px;
+    background-position: -294px -42px;
+}
+.icon-indicate-headset{
+    width: 18px;
+    height: 14px;
+    background-position: -321px -36px;
+}
+.icon-indicate-read{
+    width: 16px;
+    height: 17px;
+    background-position: -344px -35.5px;
+}
+.icon-indicate-game{
+    width: 19px;
+    height: 13px;
+    background-position: -369px -39px;
+}
+.icon-indicate-smile{
+    width: 17px;
+    height: 17px;
+    background-position: -397px -33px;
+}
+.icon-indicate-pen{
+    width: 17px;
+    height: 17px;
+    background-position: -425px -33px;
+}
+.icon-gray-star{
+    width: 21px;
+    height: 20px;
+    background-position: -9.5px -94px;
+    background-color: #fff;
+}
+.icon-half-star{
+    width: 21px;
+    height: 20px;
+    background-position: -41px -94px;
+}
+.icon-yellow-star{
+    width: 21px;
+    height: 20px;
+    background-position: -75px -93px;
+}
+.icon-gray-smile{
+    width: 26px;
+    height: 26px;
+    background-position: -104px -94px;
+}
+.icon-back-top{
+    width: 28px;
+    height: 37px;
+    background-position: -142px -88px;
+}
+.icon-publish{
+    width: 17px;
+    height: 17px;
+    background-position: -180px -88px;
+}
+.icon-sm-prev{
+    width: 12px;
+    height: 24px;
+    background-position: -209px -88px;
+}
+.icon-sm-next{
+    width: 12px;
+    height: 24px;
+    background-position: -237px -88px;
+}
+.icon-yellow-info{
+    width: 15px;
+    height: 15px;
+    background-position: -253px -87px;
+}
+.icon-gray-info{
+    width: 16px;
+    height: 16px;
+    background-position: -272px -87px;
+}
+.icon-smb-star{
+    width: 12px;
+    height: 12px;
+    background-position:  -320px -88px;
+}
+.icon-smo-star{
+    width: 12px;
+    height: 12px;
+    background-position:  -340px -88px;
+}
+.icon-member{
+    width: 18px;
+    height: 16px;
+    background-position: -293px -88px;
+}
+.icon-down{
+    width: 12px;
+    height: 7px;
+    background-position: -359px -88px;
+}
+.icon-register{
+    display: block;
+    background: url("img/register.png") no-repeat;
+    background-size: 100px 25px;
+}
+.icon-tab-ok{
+    width: 13px;
+    height: 11px;
+    background-position: -3px -3px;
+}
+.icon-warning{
+    width: 14px;
+    height: 14px;
+    background-position: -21px -3px;
+}
+.icon-register-ok{
+    width: 15px;
+    height: 14px;
+    background-position: -41px -3px;
+}
+.icon-agreement-close{
+    width: 18px;
+    height: 18px;
+    background-position: -59px -3px;
+}
+.icon-agree{
+    width: 10px;
+    height: 7px;
+    background-position: -84px -3px;
+}
+/*reward*/
+.icon-reward{
+    display: block;
+    background: url("img/reward.png") no-repeat;
+    background-size: 360px 83px;
+}
+.icon-reward-close{
+    width: 14px;
+    height: 14px;
+    background-position: -9px -8px;
+}
+.icon-reward-ok{
+    width: 22px;
+    height: 22px;
+    background-position: -5px -30px;
+}
+.icon-reward-why{
+    width: 14px;
+    height: 14px;
+    background-position: -9px -62px;
+}
+.icon-reward-sachet{
+    width: 40px;
+    height: 53px;
+    background-position: -40px -7px;
+}
+.icon-reward-aeolian{
+    width: 46px;
+    height: 55px;
+    background-position: -99px -7px;
+}
+.icon-reward-circle{
+    width: 49px;
+    height: 51px;
+    background-position: -157px -7px;
+}
+.icon-reward-clasp{
+    width: 33px;
+    height: 56px;
+    background-position: -324px -7px;
+}
+.icon-reward-crown{
+    width: 49px;
+    height: 52px;
+    background-position: -275px -7px;
+}
+/*float*/
+.icon-float{
+    display: block;
+    background: url("img/float.png") no-repeat;
+    background-size: 187px 64px;
+}
+.icon-add{
+    width: 14px;
+    height: 14px;
+    background-position: -2px -6px;
+}
+.icon-subtract{
+    width: 13px;
+    height: 2px;
+    background-position: -26px -12px;
+}
+.icon-float-bookrack{
+    width: 24px;
+    height: 23px;
+    background-position: -44px -6px;
+}
+.icon-newest{
+    width: 24px;
+    height: 21px;
+    background-position: -72px -6px;
+}
+.icon-gray-praise{
+    width: 24px;
+    height: 24px;
+    background-position: -102px -6px;
+}
+.icon-pink-praise{
+    width: 24px;
+    height: 24px;
+    background-position: -130px -6px;
+}
+.icon-float-pen{
+    width: 23px;
+    height: 23px;
+    background-position: -157px -6px;
+}
+.icon-float-read{
+    width: 18px;
+    height: 24px;
+    background-position: -4px -36px;
+}
+.icon-pink-star{
+    width: 20px;
+    height: 19px;
+    background-position: -29px -36px;
+}
+.icon-float-vip{
+    width: 24px;
+    height: 20px;
+    background-position: -54px -36px;
+}
+.icon-float-book{
+    width: 11px;
+    height: 15px;
+    background-position: -84px -38px;
+}
+.icon-float-user{
+    width: 19px;
+    height: 21px;
+    background-position: -102px -38px;
+}
+.icon-float-amount{
+    width: 16px;
+    height: 16px;
+    background-position: -122px -36px;
+}
+.icon-float-time{
+    width: 16px;
+    height: 16px;
+    background-position: -142px -36px;
+}
+.icon-rank{
+    display: block;
+    background: url("img/rank.png") no-repeat;
+    background-size: 212px 64px;
+}
+.icon-rank-all{
+    width: 22px;
+    height: 24px;
+    background-position: -6px -7px;
+    background-color: #fff;
+}
+.icon-pink-all{
+    width: 22px;
+    height: 24px;
+    background-position: -6px -38px;
+}
+.icon-rank-click{
+    width: 24px;
+    height: 24px;
+    background-position: -31px -7px;
+    background-color: #fff;
+
+}
+.icon-pink-click{
+    width: 24px;
+    height: 24px;
+    background-position: -30px -38px;
+}
+.icon-rank-zan{
+    width: 20px;
+    height: 20px;
+    background-position: -57px -7px;
+    background-color: #fff;
+}
+.icon-pink-zan{
+    width: 20px;
+    height: 20px;
+    background-position: -57px -38px;
+}
+.icon-rank-chase{
+    width: 19px;
+    height: 23px;
+    background-position: -84px -7px;
+    background-color: #fff;
+}
+.icon-pink-chase{
+    width: 19px;
+    height: 23px;
+    background-position: -84px -38px;
+}
+.icon-rank-pay{
+    width: 22px;
+    height: 22px;
+    background-position: -108px -7px;
+    background-color: #fff;
+}
+.icon-pink-pay{
+    width: 22px;
+    height: 22px;
+    background-position: -108px -38px;
+}
+.icon-rank-new{
+    width: 22px;
+    height: 21px;
+    background-position: -136px -7px;
+    background-color: #fff;
+}
+.icon-pink-new{
+    width: 22px;
+    height: 21px;
+    background-position: -136px -38px;
+}
+.icon-rank-newBook{
+    width: 22px;
+    height: 22px;
+    background-position: -162px -7px;
+    background-color: #fff;
+}
+.icon-pink-newBook{
+    width: 22px;
+    height: 22px;
+    background-position: -164px -38px;
+}
+.icon-rank-over{
+    width: 20px;
+    height: 21px;
+    background-position: -189px -7px;
+    background-color: #fff;
+}
+.icon-pink-over{
+    width: 20px;
+    height: 21px;
+    background-position: -189px -38px;
+}
+.icon-center{
+    display: block;
+    background: url("img/center.png") no-repeat;
+    background-size: 200px 100px;
+}
+.icon-center-user{
+    width: 15px;
+    height: 16px;
+    background-position: -6px -9px;
+}
+.icon-center-money{
+    width: 18px;
+    height: 18px;
+    background-position: -26px -9px;
+}
+.icon-center-exit{
+
+    width: 19px;
+    height: 20px;
+    background-position: -50.5px -9px;
+
+}
+.icon-center-primary{
+    width: 31px;
+    height: 19px;
+    background-position: -73px -8px;
+}
+.icon-center-medium{
+    width: 26px;
+    height: 23px;
+    background-position: -108px -8px;
+}
+.icon-center-high{
+    width: 22px;
+    height: 22px;
+    background-position: -139px -7px;
+}
+.icon-center-girl{
+    width: 12px;
+    height: 12px;
+    background-position: -165px -8px;
+}
+.icon-center-boy{
+    width: 12px;
+    height: 12px;
+    background-position: -181px -8px;
+}
+.icon-center-balance{
+    width: 23px;
+    height: 26px;
+    background-position: -3px -32px;
+}
+.icon-center-ticket{
+    width: 23px;
+    height: 18px;
+    background-position: -32px -35px;
+}
+.icon-center-delete{
+    width: 16px;
+    height: 16px;
+    background-position: -65px -33px;
+}
+.icon-center-vip{
+    width: 10px;
+    height: 10px;
+    background-position: -91px -33px;
+}
+.icon-black-user{
+    width: 20px;
+    height: 20px;
+    background-position: -103px -34px;
+    background-color: #fff;
+}
+.icon-black-move{
+    width: 22px;
+    height: 22px;
+    background-position: -127px -34px;
+    background-color: #fff;
+}
+.icon-black-money{
+    width: 23px;
+    height: 23px;
+    background-position: -155px -34px;
+    background-color: #fff;
+}
+.icon-black-finance{
+    width: 21px;
+    height: 20px;
+    background-position: -3px -69px;
+    background-color: #fff;
+}
+.icon-black-author{
+    width: 20px;
+    height: 20px;
+    background-position: -30px -70px;
+    background-color: #fff;
+}
+.icon-center-jump{
+    width: 17px;
+    height: 17px;
+    background-position: -53px -70px;
+}
+.icon-hint{
+    display: block;
+    background: url("img/hint.png") no-repeat;
+    background-size: 230px 60px;
+}
+.icon-hint-qq{
+    width: 52px;
+    height: 54px;
+    background-position: -3px -3px;
+}
+.icon-hint-help{
+    width: 52px;
+    height: 53px;
+    background-position: -61px -3px;
+}
+.icon-hint-problem{
+    width: 51px;
+    height: 49px;
+    background-position: -117px -3px;
+}
+.icon-hint-complaint{
+    width: 47px;
+    height: 36px;
+    background-position: -171px -3px;
+}
+.icon-star{
+    isplay: block;
+    background: url("img/strar.png") no-repeat;
+    background-size: 150px 50px;
+}
+.icon-star-yellow{
+    width: 42px;
+    height: 42px;
+    background-position: -3px -4px;
+}
+.icon-star-b {
+    width: 42px;
+    height: 42px;
+    background-position: -49px -4px;
+}
+.icon-star-gray{
+    width: 42px;
+    height: 42px;
+    background-position: -97px -4px;
+}

@@ -1,0 +1,165 @@
+/*rest*/
+
+
+/*@charset 'UTF-8';*/
+
+a,
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 14px
+}
+
+li,
+ol,
+ul {
+    list-style: none outside none
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+fieldset,
+img {
+    border: 0 none
+}
+
+body {
+    font-family: PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    text-align: left;
+    color: #333;
+    background: #f8f2f2;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+input::-moz-focus-inner {
+    padding: 0;
+    border: none
+}
+
+a img {
+    border: none
+}
+
+a,
+a:link,
+a:active {
+    text-decoration: none;
+    outline: 0;
+}
+
+a {
+    color: #333333
+}
+
+
+/* a:hover{color: #FF4192;} */
+
+textarea {
+    font: 14px/1.8 PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    resize: none;
+    outline: 0
+}
+
+select {
+    font-family: PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif
+}
+
+button,
+input {
+    font-family: PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    border: none;
+    outline: 0
+}
+
+input::-ms-clear {
+    display: none
+}
+
+label {
+    cursor: pointer
+}
+
+cite,
+em,
+i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #C3C3C3
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #C3C3C3
+}
+
+p {
+    word-wrap: break-word;
+    word-break: break-all
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.fleft {
+    float: left
+}
+
+.fright {
+    float: right
+}
+
+.dot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center
+}

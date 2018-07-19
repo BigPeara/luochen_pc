@@ -1,0 +1,63 @@
+.copyright-container{
+    margin-bottom: 20px;
+  
+}
+.copyright-title{
+    font-size: 12px;
+    color: #666;
+    padding: 20px 0 8px 0;
+}
+.copyright-info{
+    background-color: #fff;
+}
+.copyright-headline{
+    font-size: 16px;
+    color: #333;
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px solid #F1F1F1;
+    padding-left: 20px;
+}
+.copyright-detail{
+    padding: 30px 0 0 55px;
+}
+.pink-dot{
+    width: 10px;
+    height: 10px;
+    background-color: #FFD9E9;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 36px 0 0;
+    margin-top: 8px;
+    z-index: 5;
+    
+}
+.copyright-detail{
+    padding-bottom: 64px;
+}
+.copyright-caption{
+    position: relative;
+}
+.pink-line{
+    border-right: 1px solid #FFD9E9;
+    width: 1px;
+    margin-left: 4px;
+    height: 805px;
+    position: absolute;
+    top: 18px;
+    left: 0;
+}
+.copyright-steps{
+    padding-bottom: 25px;
+}
+.caption{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 24px;
+}
+.copyright-step{
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 18px;
+}

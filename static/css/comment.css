@@ -1,0 +1,1094 @@
+/*书本的详情*/
+
+.bookDetails-container {
+    background-color: #fff;
+}
+
+.bookDetails-container .book-details {
+    width: 796px;
+    margin: 20px 30px 0 20px;
+}
+
+.bookDetails-container .book-container .book-cover {
+    width: 260px;
+    height: 368px;
+}
+
+.bookDetails-container .book-container .book-cover img {
+    display: block;
+    width: 100%;
+}
+
+.bookDetails-container .book-container .book-copyright {
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+}
+
+.bookDetails-container .book-container .book-copyright a {
+    color: #999;
+}
+
+.bookDetails-container .book-container .book-info {
+    width: 510px;
+    position: relative;
+}
+
+.bookDetails-container .book-container .book-name {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 7px;
+}
+
+.bookDetails-container .book-container .book-introd {
+    font-size: 12px;
+    color: #333;
+    line-height: 20px;
+}
+
+.bookDetails-container .book-container .book-open-introd .book-introduce-container {
+    height: 60px;
+    overflow: hidden;
+}
+
+.bookDetails-container .book-container .book-open-introd .book-introduce-open {
+    display: block;
+}
+
+.bookDetails-container .book-container .book-open-introd .book-introduce-close {
+    display: none;
+}
+
+.bookDetails-container .book-container .book-close-introd .book-introduce-open {
+    display: none;
+}
+
+.bookDetails-container .book-container .book-close-introd .book-introduce-close {
+    display: block;
+}
+
+
+/* .bookDetails-container .book-container .book-introduce-container {
+    position: relative;
+} */
+
+.bookDetails-container .book-container .book-introduce-title {
+    line-height: 48px;
+    font-size: 14px;
+}
+
+.bookDetails-container .book-container .icon-down,
+.bookDetails-container .book-container .icon-top {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.bookDetails-container .book-container .book-introduce-close,
+.bookDetails-container .book-container .book-introduce-open {
+    position: absolute;
+    right: 0;
+    top: 63%;
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+    display: none;
+}
+
+.bookDetails-container .book-container .book-label {
+    font-size: 14px;
+    color: #999;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.bookDetails-container .book-container .book-label-item {
+    padding: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    margin-right: 10px;
+}
+
+.bookDetails-container .book-container .book-label-a {
+    background-color: #FF4141;
+    color: #fff;
+}
+
+.bookDetails-container .book-container .book-label-f {
+    background-color: #56C1FF;
+    color: #fff;
+}
+
+.bookDetails-container .book-container .book-label-c {
+    background-color: #FC7286;
+    color: #fff;
+}
+
+.bookDetails-container .book-container .book-btn {
+    margin-top: 50px;
+}
+
+.bookDetails-container .book-container .book-btn-item {
+    width: 124px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid #FF4192;
+    color: #FF4192;
+    display: block;
+    margin-right: 65px;
+}
+
+.bookDetails-container .book-container .book-btn-right {
+    margin-right: 0;
+}
+
+.bookDetails-container .book-state {
+    margin: 20px 0 30px 10px;
+}
+
+.bookDetails-container .book-state .book-state-item {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #E0E0E0;
+    margin-right: 20px;
+}
+
+.bookDetails-container .book-state .book-state-item .icon-more {
+    margin: 3px auto;
+}
+
+.bookDetails-container .book-state .book-state-item .icon-indicate-book {
+    margin-top: 5px;
+}
+
+.bookDetails-container .book-state .book-state-item .icon-indicate-headset {
+    width: 16px;
+    height: 15px;
+}
+
+.bookDetails-container .book-state .book-state-item .icon-indicate-game {
+    width: 16px;
+    height: 11px;
+    margin-top: 5px;
+}
+
+.bookDetails-container .book-update {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.bookDetails-container .book-update .book-line {
+    width: 3px;
+    height: 12px;
+    display: inline-block;
+    background-color: #FF4192;
+}
+
+.bookDetails-container .book-update .book-update-chapter {
+    margin-left: 70px;
+}
+
+.bookDetails-container .book-update .book-chapter-name {
+    margin-left: 10px;
+}
+
+.bookDetails-container .book-update .book-update-time {
+    margin-left: 44px;
+    font-size: 12px;
+    color: #FF4192;
+}
+
+.bookDetails-container .book-update .book-lines {
+    width: 1px;
+    height: 15px;
+    background-color: #E8E8E8;
+    margin-left: 54px;
+}
+
+.bookDetails-container .user-info {
+    border-left: 1px solid #E8E8E8;
+    height: 100%;
+    width: 190px;
+    padding: 0 20px;
+}
+
+.bookDetails-container .user-info .user-head {
+    width: 90px;
+    height: 90px;
+    margin: 20px auto 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+
+.bookDetails-container .user-info .user-head img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+
+.bookDetails-container .user-info .userInfo {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 8px;
+}
+
+.bookDetails-container .user-info .icon-float-user {
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.bookDetails-container .user-info .user-name {
+    line-height: 1;
+    margin-left: 8px;
+}
+
+.bookDetails-container .user-info .user-introduce {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.bookDetails-container .user-info .user-title {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.bookDetails-container .user-info .user-title span:before,
+.user-title span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-color: #E8E8E8;
+    width: 20%;
+    height: 1px;
+}
+
+.bookDetails-container .user-info .user-title span:before {
+    left: 8%;
+}
+
+.bookDetails-container .user-info .user-title span:after {
+    right: 8%;
+}
+
+.bookDetails-container .user-info .user-works {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.bookDetails-container .user-info .book-works {
+    margin-top: 10px;
+}
+
+.bookDetails-container .user-info .book-works-list {
+    width: 82px;
+    height: 115px;
+    background-color: lightpink;
+    margin: 0 42px;
+}
+
+.bookDetails-container .user-info .btn-prev,
+.bookDetails-container .user-info .btn-next {
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.bookDetails-container .user-info .book-name {
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.bookDetails-container .user-info .book-classify {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bookDetails-container .user-info .btn-link {
+    width: 120px;
+    height: 34px;
+    border: 1px solid #FF4192;
+    font-size: 16px;
+    color: #FF4192;
+    line-height: 34px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+}
+
+.bookDetails-container .book-classify-info {
+    font-size: 12px;
+    color: #999;
+    border-bottom: 1px solid #FF8EBE;
+    width: 70px;
+    text-align: center;
+    margin-left: -6px;
+}
+
+.bookDetails-container .book-classify-list {
+    margin-top: 30px;
+}
+
+.bookDetails-container .book-classify-item {
+    margin: 0 50px 15px 0;
+}
+
+
+/*打赏内容*/
+
+.reward-container .sidebar {
+    width: 247px;
+    background-color: #fff;
+    padding-bottom: 38px;
+}
+
+.reward-container .sidebar .sidebar-name {
+    padding: 18px 20px 15px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.reward-container .sidebar .sidebar-title {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+    font-weight: 600;
+}
+
+.reward-container .sidebar .sidebar-link {
+    font-size: 12px;
+    color: #FF4192;
+    line-height: 20px;
+}
+
+.reward-container .sidebar .sidebar-user-name {
+    font-size: 12px;
+    color: #333;
+    line-height: 20px;
+    margin-left: 16px;
+}
+
+.reward-container .sidebar .sidebar-item-label {
+    font-size: 12px;
+    color: #FEFEFE;
+    background-color: #FF5D4B;
+    line-height: 16px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.reward-container .sidebar .sidebar-item {
+    margin-top: 14px;
+    padding: 0 20px;
+}
+
+.reward-container .sidebar .sidebar-item-rank {
+    font-size: 18px;
+    color: #FF4192;
+    font-style: italic;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #fff;
+}
+
+.reward-container .sidebar .sidebar-item-1 {
+    background-color: #FFCA4B;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 2.5px;
+    color: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.reward-container .sidebar .sidebar-item-2 {
+    background-color: #FF974B;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 2.5px;
+    color: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.reward-container .sidebar .sidebar-item-3 {
+    background-color: #FF604B;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 2.5px;
+    color: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.jing {
+    background-color: #65DCFF;
+    margin-left: 4px;
+}
+
+.comment-tower {
+    font-size: 12px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.comment-detail-msg {
+    width: 900px;
+    margin-left: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.minute-content,
+.link-ww {
+    font-size: 12px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.link-book {
+    color: #333;
+}
+
+.comment-update-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.replay-box {
+    width: 880px;
+}
+
+.yellow-replay {
+    color: #F5CD58;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.top-triangle {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 11px solid #F8F8F8;
+    margin-left: 20px;
+}
+
+.comment-item {
+    /*width: 80px;*/
+    background-color: #F8F8F8;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.comment-list {
+    width: 870px;
+    padding: 20px 10px 20px 20px;
+    border-bottom: 1px dashed #EEEEEE;
+}
+
+.comment-info {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 12px;
+}
+
+.comment-item li:nth-child(2) {
+    border-bottom: none;
+}
+
+.commentTime {
+    font-size: 12px;
+    color: #999;
+    font-size: 12px;
+}
+
+.gray-replay {
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+}
+
+.look-left-line,
+.look-right-line {
+    width: 380px;
+    border-bottom: 1px solid #EEEEEE;
+    margin-top: 8px;
+}
+
+.book-all-box {
+    padding-bottom: 17px;
+}
+
+.btn-look-all {
+    width: 100px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: #4785E1;
+}
+
+.look-trigon {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #4785E1;
+    margin: 4px 6px 0 17px;
+}
+
+.replay-info {
+    width: 870px;
+    height: 48px;
+    line-height: 48px;
+    margin-top: 10px;
+    padding: 0 10px 0 20px;
+    background-color: #F8F8F8;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #999;
+}
+
+.btn-replay {
+    width: 88px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #FF8EBD;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.replay-face {
+    width: 900px;
+    padding: 10px 0 40px 0;
+}
+
+.icon-gray-smile {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.author-replay-box {
+    margin-top: 34px;
+}
+
+.author-replay {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.author-replay-time {
+    margin: 5px 0 30px 0;
+}
+
+.auther-comment-time {
+    margin-right: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+.author-replay-one {
+    margin: 5px 0 74px 0;
+}
+
+.auther-replay-time {
+    margin-right: 10px;
+}
+
+.comment-detail-last {
+    border-bottom: none;
+}
+
+.look-all-comment {
+    margin-bottom: 40px;
+}
+
+.left-dashed-line,
+.right-dashed-line {
+    width: 430px;
+    border-top: 1px dashed #4785E1;
+    margin-top: 8px;
+}
+
+.link-all-comment {
+    font-size: 13px;
+    color: #4785E1;
+    width: 180px;
+    text-align: center;
+}
+
+.publish-comment-last {
+    padding-bottom: 10px;
+}
+
+.publish-comment-user {
+    margin-right: 58px;
+}
+
+.comment-all-box {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.comment-book-name {
+    font-size: 18px;
+    height: 59px;
+    line-height: 59px;
+    color: #333;
+    padding-left: 20px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.primary-level {
+    width: 37px;
+    height: 18px;
+    line-height: 17.5px;
+    color: #fff;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    background-color: #FC8787;
+    color: #fff;
+    margin-left: 21.5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.gold-member {
+    font-size: 12px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.cut-line {
+    width: 1040px;
+    border-bottom: 1px dashed #f1f1f1;
+    margin-bottom: 40px;
+    >>>>>>>4b1329e3a6ffb0b3eea9669798a1bf80e9651401
+}
+
+.reward-container .sidebar .book-item {
+    margin-left: 24px;
+}
+
+.reward-container .sidebar .book-cover {
+    width: 82px;
+    height: 115px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    overflow: hidden;
+}
+
+.reward-container .sidebar .book-cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.reward-container .sidebar .book-info {
+    margin-left: 10px;
+    width: 160px;
+}
+
+.reward-container .sidebar .book-name {
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.reward-container .sidebar .book-author {
+    font-size: 12px;
+    color: #999;
+    line-height: 1;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.reward-container .sidebar .book-label {
+    font-size: 12px;
+    color: #FF4192;
+    line-height: 1;
+    margin-top: 49px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.reward-container .sidebar .sidebar-book-name {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    width: 185px;
+    text-align: center;
+    position: relative;
+}
+
+.reward-container .sidebar .sidebar-book-name span:before,
+.sidebar-book-name span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-color: #E8E8E8;
+    width: 30%;
+    height: 1px;
+}
+
+.reward-container .sidebar .sidebar-book-name span:before {
+    left: 8%;
+}
+
+.reward-container .sidebar .sidebar-book-name span:after {
+    right: 8%;
+}
+
+.reward-container .sidebar .sidebar-empty-item .sidebar-item-rank {
+    color: #DFDFDF;
+}
+
+.reward-container .sidebar .sidebar-empty-item .sidebar-book-name {
+    font-size: 12px;
+    color: #DFDFDF;
+}
+
+.reward-container .reward-details {
+    width: 810px;
+    background-color: #fff;
+}
+
+.reward-container .reward-details .reward-item {
+    width: 258px;
+    text-align: center;
+    border-right: 1px solid #F1F1F1;
+    padding-bottom: 40px;
+}
+
+.reward-container .reward-details .reward-title {
+    font-size: 18px;
+    color: #333;
+    padding: 18px 0 15px 20px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.reward-container .reward-details .reward-item-title {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 30px 0;
+    /* text-align: center; */
+}
+
+.reward-container .reward-details .reward-line {
+    margin: 0 5px;
+}
+
+.reward-container .reward-details .reward-diff {
+    color: #FF4192;
+}
+
+.reward-container .reward-details .reward-item-ticket {
+    font-size: 12px;
+    color: #999;
+    /* text-align: center; */
+}
+
+.reward-container .reward-details .reward-item-number {
+    font-size: 36px;
+    color: #333;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.reward-container .reward-details .reward-item-rank {
+    font-size: 12px;
+    color: #333;
+    margin-top: 20px;
+    height: 20px;
+}
+
+.reward-container .reward-details .reward-item-icon {
+    margin-top: 50px;
+}
+
+.reward-container .reward-details .reward-item-btn {
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #FF4192;
+    margin: 35px auto 0;
+    color: #FF4192;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    cursor: pointer;
+}
+
+.reward-container .reward-details .reward-interaction-list {
+    overflow-y: auto;
+    height: 340px;
+}
+
+.reward-container .reward-details .reward-interaction {
+    width: 235px;
+    margin: 0 27px;
+}
+
+.reward-container .reward-details .reward-interaction-item {
+    font-size: 12px;
+    color: #333;
+    line-height: 20px;
+    padding: 15px 0 12px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.reward-container .reward-details .reward-interaction-diff {
+    color: #999;
+}
+
+.reward-container .reward-details .reward-interaction-title {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.reward-container .reward-details .user-name {
+    width: 40px;
+    overflow: hidden;
+    height: 20px;
+}
+
+
+/*评论内容*/
+
+.comment-container {
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.comment-container .comment-title {
+    font-size: 18px;
+    color: #333;
+    padding: 20px 0 0 10px;
+}
+
+.comment-container .comment-title .comment-line {
+    width: 1px;
+    height: 11px;
+    background-color: #333;
+    display: inline-block;
+    margin: 0 15px 0 5px;
+}
+
+.comment-container .comment-title .comment-data {
+    color: #999;
+    font-size: 12px;
+}
+
+.comment-container .btn-publish {
+    width: 114px;
+    height: 34px;
+    background-color: #FF4192;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    margin: 35px 20px 0 0;
+}
+
+.comment-container .btn-publish .icon-publish {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.comment-container .comment-tabs {
+    margin: 0 20px 40px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.comment-container .comment-tabs .comment-tabs-item {
+    line-height: 24px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.comment-container .comment-tabs .comment-tabs-bar {
+    margin-left: 64px;
+}
+
+.comment-container .comment-tabs-container {
+    padding: 0 27px;
+}
+
+.comment-container .comment-tabs-container .user-head {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+
+.comment-container .comment-tabs-container .comment-list-item {
+    padding-bottom: 30px;
+}
+
+.comment-container .comment-tabs-container .user-head img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.comment-container .comment-tabs-container .user-name {
+    font-size: 14px;
+    color: #333;
+    line-height: 34px;
+    width: 80px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.comment-container .comment-tabs-container .user-grad {
+    font-size: 12px;
+    color: #fff;
+    width: 37px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #FC8787;
+    margin: 0 auto;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -o-border-radius: 9px;
+    -ms-border-radius: 9px;
+}
+
+.comment-container .comment-tabs-container .user-info {
+    width: 895px;
+}
+
+.comment-container .comment-tabs-container .user-comment {
+    line-height: 18px;
+    font-size: 12px;
+    color: #333;
+    margin: 24px 0 30px;
+}
+
+.comment-container .comment-tabs-container .comment-update-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.comment-container .comment-tabs-container .reply {
+    color: #333;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.comment-container .comment-tabs-container .icon-gray-info {
+    display: inline-block;
+    vertical-align: -0.5ex;
+    margin-right: 4px;
+}
+
+.comment-container .comment-tabs-container .user-title {
+    font-size: 12px;
+    color: #333;
+}
+
+.comment-container .comment-tabs-container .update-time {
+    color: #999;
+}

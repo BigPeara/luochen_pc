@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>落尘文学_原创网络文学,免费手机小说阅读</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="落尘文学提供恐怖小说、灵异小说、玄幻小说、武侠小说、都市小说等小说在线阅读、手机阅读,无弹窗。">
+    <meta name="keywords" content="落尘文学,小说排行榜,小说排行,无弹窗,手机阅读">
+    <meta name="robots" content="all">
+    <meta name="googlebot" content="all">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../static/icon/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/comment.css" />
+    <style>
+        .reward .select-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 10000;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #E8E8E8;
+            width: 658px;
+            height: 480px;
+            border-radius: 4px;
+            -webkit-boder-radius: 4px;
+            -moz-border-radius: 4px;
+            -o-border-radius: 4px;
+            -ms-border-radius: 4px;
+        }
+        
+        .reward .select-container .select-tabs-item {
+            position: relative;
+            width: 90px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            -webkit-border-top-left-radius: 10px;
+            -moz-border-top-left-radius: 10px;
+            -ms-border-top-left-radius: 10px;
+            -o-border-top-left-radius: 10px;
+            -webkit-border-top-right-radius: 10px;
+            -ms-border-top-right-radius: 10px;
+            -moz-border-top-right-radius: 10px;
+            -o-border-top-right-radius: 10px;
+            border-top-right-radius: 10px;
+            margin: 26px 0 0 28px;
+            font-size: 16px;
+            color: #999;
+            cursor: pointer;
+        }
+        
+        .reward .select-container .select-tabs-item .select-item-line {
+            width: 55px;
+            height: 4px;
+            background-color: #FF4192;
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            display: none;
+        }
+        
+        .reward .select-container .select-tabs-container {
+            width: 528px;
+            background-color: #fff;
+            position: absolute;
+            left: 20px;
+            padding: 0 45px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -o-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            display: none;
+        }
+        
+        .reward .select-tabs-container .select-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background-color: #FFD3E6;
+        }
+        
+        .reward .select-tabs-container .select-mode-item {
+            text-align: center;
+            margin: 25px 32px 0 0;
+            position: relative;
+        }
+        
+        .reward .select-tabs-container .select-mod-diff {
+            margin-right: 0;
+        }
+        
+        .reward .select-tabs-container .select-name {
+            color: #333;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+        
+        .reward .select-tabs-container .getNumber {
+            font-size: 12px;
+            color: #666;
+            line-height: 20px;
+        }
+        
+        .reward .select-tabs-container .icon-reward-ok {
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            display: none;
+        }
+        
+        .reward .select-tabs-container .select-mode-cur .icon-reward-ok {
+            display: block;
+        }
+        
+        .reward .select-tabs-container .select-mode-cur .getNumber {
+            color: #FF4192;
+        }
+        
+        .reward .select-tabs-container .select-mode-cur .select-name {
+            color: #FF4192;
+        }
+        
+        .reward .select-tabs-container .buy-title {
+            font-size: 14px;
+            color: #333;
+            line-height: 40px;
+        }
+        
+        .reward .select-tabs-container .buy {
+            font-size: 12px;
+            color: #333;
+            margin-top: 20px;
+        }
+        
+        .reward .select-tabs-container .remove-buy,
+        .reward .select-tabs-container .add-buy {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        .reward .select-tabs-container .buy-value {
+            width: 39px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 16px;
+            text-align: center;
+            color: #333;
+            background-color: #F5F5F5;
+            border: 1px solid #E8E8E8;
+        }
+        
+        .reward .select-tabs-container .purchase {
+            margin: 0 11px 0 20px;
+        }
+        
+        .reward .select-tabs-container .buy-diff {
+            font-size: 12px;
+            color: #999;
+            line-height: 40px;
+            margin-left: 40px;
+        }
+        
+        .reward .select-tabs-container .btn-pay {
+            display: inline-block;
+            width: 58px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background-color: #FF956F;
+            font-size: 12px;
+            color: #fefefe;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            margin-top: 8px;
+        }
+        
+        .reward .select-tabs-container .message {
+            margin: 35px 0 5px 20px;
+        }
+        
+        .reward .select-tabs-container .input-text {
+            height: 26px;
+            line-height: 26px;
+            border: 1px solid #E8E8E8;
+            width: 450px;
+            display: block;
+            margin: 6px 0 0 20px;
+        }
+        
+        .reward .select-tabs-container .prompt {
+            font-size: 12px;
+            line-height: 34px;
+            color: #F9A283;
+            margin-left: 50px;
+        }
+        
+        .reward .select-tabs-container .icon-reward-why {
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: -0.5ex;
+        }
+        
+        .reward .select-tabs-container .btn-reward,
+        .reward .select-tabs-container .btn-recom,
+        .reward .select-tabs-container .btn-stars {
+            width: 140px;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+            background-color: #FF4192;
+            border-radius: 17px;
+            -webkit-border-radius: 17px;
+            -moz-border-radius: 17px;
+            -ms-border-radius: 17px;
+            -o-border-radius: 17px;
+            font-size: 16px;
+            color: #fff;
+            margin: 15px auto;
+            cursor: pointer;
+        }
+        
+        .reward .select-tabs-container .btn-recom {
+            margin: 30px auto;
+        }
+        
+        .reward .select-tabs-container .btn-stars {
+            margin: 36px auto;
+        }
+        
+        .reward .select-tabs-container .icon-ticket {
+            width: 270px;
+            height: 124px;
+            margin: 60px auto 30px;
+        }
+        
+        .reward .select-tabs-container .icon-ticket img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .reward .select-tabs-container .select-number {
+            margin-left: 165px;
+        }
+        
+        .reward .select-tabs-container .prompt-tickt {
+            text-align: center;
+            font-size: 12px;
+            color: #FFB094;
+            line-height: 34px;
+            margin: 10px 0 0 40px;
+        }
+        
+        .reward .select-tabs-container .stars-list {
+            width: 320px;
+            margin: 90px auto 25px;
+        }
+        
+        .reward .select-tabs-container .stars-item {
+            margin-right: 20px;
+        }
+        
+        .reward .select-tabs-container .stars-prompt {
+            text-align: center;
+            font-size: 12px;
+            color: #FFB094;
+        }
+        
+        .reward .select-tabs-container .stars-text {
+            font-size: 16px;
+            color: #FFB094;
+            text-align: center;
+            margin: 26px 0 90px;
+        }
+        
+        .reward .select-container .select-cur-tabs .select-tabs-container {
+            display: block;
+        }
+        
+        .reward .select-container .select-cur-tabs .select-tabs-item {
+            background-color: #fff;
+            color: #FF4192;
+        }
+        
+        .reward .select-container .select-cur-tabs .select-item-line {
+            display: block;
+        }
+        
+        .reward .select-container .icon-reward-close {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="myContainer">
+    <div class="wrapper">
+        <img src="../static/img/container-bg.png" class="img-fixed" />
+        <!-- 公共头部 -->
+        <div class="header">
+            <div class="container-center clearfix">
+                <div class="login fleft clearfix">
+                    <div class="login-head fleft"><img src="../static/img/headImg.png" data-img="headImg.png" /></div>
+                    <a href="#" class="login-text fleft">登录</a>
+                    <p class="login-line fleft">|</p>
+                    <a href="#" class="register fleft">注册</a>
+                </div>
+                <div class="header-bar fright clearfix">
+                    <a href="#" class="fleft header-text"><span class="icon-small icon-pen"></span>阅读记录<span class="up"></span></a>
+                    <a class="fleft line-bar">|</a>
+                    <a href="#" class="fleft header-text"><span class="icon-small icon-bookrack"></span>书架</a>
+                    <a class="fleft line-bar">|</a>
+                    <a href="#" class="fleft header-text"><span class="icon-small icon-money"></span>充值</a>
+                    <a class="fleft line-bar">|</a>
+                    <a href="#" class="fleft header-text"><span class="icon-small icon-center"></span>作者中心</a>
+                    <a class="fleft line-bar">|</a>
+                </div>
+            </div>
+        </div>
+        <!-- 公共logo -->
+        <a href="#" class="logo"><img src="../static/img/logo@2x.png" /></a>
+        <!-- 公共导航 -->
+        <div class="nav">
+            <div class="container-center">
+                <div class="fleft nav-menu clearfix">
+                    <a href="index.html" class="nav-menu-item fleft">首页</a>
+                    <a href="bookstore.html" class="nav-menu-item fleft">书库</a>
+                    <a href="rank.html" class="nav-menu-item fleft">排行榜</a>
+                    <a href="manito.html" class="nav-menu-item fleft">大神</a>
+                    <a href="https://www.luochen.com/manhua/" class="nav-menu-item fleft">漫画</a>
+                </div>
+                <div class="search fright">
+                    <input type="text" placeholder="请输入关键字..." class="search-box" />
+                    <span class="icon-small icon-search"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="container">
+            <p class="page-crumbs">书库 > 穿越 > 女王穿越，原始驯夫记</p>
+            <!-- 书本的详情 -->
+            <div class="page-container bookDetails-container clearfix">
+                <div class="book-details fleft">
+                    <div class="book-container clearfix">
+                        <div class="fleft">
+                            <p class="book-cover"><img src="../static/img/cover.png" /></p>
+                            <p class="clearfix book-copyright">
+                                <span class="fleft">IP运营指示灯</span>
+                                <a href="#" class="fright">版权合作>></a>
+                            </p>
+                        </div>
+                        <div class="book-info fright">
+                            <div class="book-name">
+                                女王穿越，原始驯夫记
+                            </div>
+                            <div class="book-classify">
+                                <div class="book-classify-list clearfix">
+                                    <div class="book-classify-item clearfix fleft">
+                                        <p class="icon-more icon-label-classify fleft"></p>
+                                        <p class="book-classify-info fleft">穿越</p>
+                                    </div>
+                                    <div class="book-classify-item clearfix fleft">
+                                        <p class="icon-more icon-label-author fleft"></p>
+                                        <p class="book-classify-info fleft">穿越</p>
+                                    </div>
+                                    <div class="book-classify-item clearfix fleft">
+                                        <p class="icon-more icon-label-read fleft"></p>
+                                        <p class="book-classify-info fleft">穿越</p>
+                                    </div>
+                                    <div class="book-classify-item clearfix fleft">
+                                        <p class="icon-more icon-label-state fleft"></p>
+                                        <p class="book-classify-info fleft">穿越</p>
+                                    </div>
+                                    <div class="book-classify-item clearfix fleft">
+                                        <p class="icon-more icon-label-number fleft"></p>
+                                        <p class="book-classify-info fleft">穿越</p>
+                                    </div>
+                                    <div class="book-classify-item clearfix fleft">
+                                        <p class="icon-more icon-label-bookrack fleft"></p>
+                                        <p class="book-classify-info fleft">穿越</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-introd">
+                                <p class="book-introduce-title">简介</p>
+                                <p class="book-introduce-container">
+                                    家族少主，天生废魂，在机缘巧合之下，觉醒了太古神秘的战神之魂后，一路逆袭，邂逅仙姿美女，碾压九界天才，无所不战，无所不胜！秦南：重情重义，无所畏惧，偶然获得战神之魂偶然。 ...... 他是赫赫有名的宁家四公子，所有女人心目中的完美情人，却执意娶了上不得台面的私生女。 婚后，他对她百般宠爱纵容，却唯独不肯碰她。 一次意外，萧笙看着那个懵懂的孩子，“宁迹，这就是你不肯碰我的理由？” 宁迹拂过她的头发，深邃的眸波澜不惊，“阿笙，你想多了……”
+                                </p>
+                                <p>
+                                    <span class="book-introduce-open">
+                                        <i class="book-show-text">展开</i>
+                                        <i class="icon-more icon-down"></i>
+                                    </span>
+                                    <span class="book-introduce-close">
+                                        <i class="book-show-text">收起</i>
+                                        <i class="icon-more icon-top"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="book-label clearfix">
+                                <p class="book-label-item fleft">标签</p>
+                                <p class="book-label-item book-label-c fleft">穿越</p>
+                                <p class="book-label-item book-label-f fleft">玄幻</p>
+                                <p class="book-label-item book-label-a fleft">爱情</p>
+                            </div>
+                            <div class="book-btn clearfix">
+                                <a href="#" class="book-btn-item fleft">立即阅读</a>
+                                <a href="#" class="book-btn-item fleft">查看目录</a>
+                                <a href="#" class="book-btn-item book-btn-right fleft">放入书架</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-state clearfix">
+                        <p class="book-state-item fleft">
+                            <i class="icon-more icon-indicate-book"></i>
+                        </p>
+                        <p class="book-state-item fleft">
+                            <i class="icon-more icon-indicate-headset"></i>
+                        </p>
+                        <p class="book-state-item fleft">
+                            <i class="icon-more icon-indicate-read"></i>
+                        </p>
+                        <p class="book-state-item fleft">
+                            <i class="icon-more icon-indicate-game"></i>
+                        </p>
+                        <p class="book-state-item fleft">
+                            <i class="icon-more icon-indicate-smile"></i>
+                        </p>
+                        <p class="book-state-item fleft">
+                            <i class="icon-more icon-indicate-pen"></i>
+                        </p>
+                    </div>
+                    <div class="book-update clearfix">
+                        <p class="book-update-title fleft">
+                            <span class="book-line"></span>
+                            <span>最近更新</span>
+                        </p>
+                        <p class="book-update-chapter fleft">
+                            <span>第一百零三章 </span>
+                            <span class="book-chapter-name">剥去猜忌</span>
+                        </p>
+                        <p class="book-update-time fleft">3小时更新</p>
+                        <p class="book-lines fleft">|</p>
+                        <p class="book-update-chapter fleft">
+                            <span>第一百零三章 </span>
+                            <span class="book-chapter-name">剥去猜忌</span>
+                        </p>
+                        <p class="book-update-time fleft">3小时更新</p>
+                    </div>
+                </div>
+                <div class="user-info fright">
+                    <p class="user-head"><img src="../static/img/author-head.png"></p>
+                    <p class="userInfo">
+                        <span class="icon-float icon-float-user"></span>
+                        <span class="user-name">大梨子</span>
+                    </p>
+                    <p class="user-introduce">这个人很懒，什么也没有留下</p>
+                    <p class="user-title"><span>TA的作品</span></p>
+                    <p class="user-works">(3部)</p>
+                    <div class="book-works clearfix">
+                        <p class="btn-prev icon-more icon-sm-prev fleft"></p>
+                        <div class="book-works-list fleft"></div>
+                        <p class="btn-next icon-more icon-sm-next fleft"></p>
+                    </div>
+                    <p class="book-name">天干物燥，小心前夫</p>
+                    <p class="book-classify">【总裁】</p>
+                    <p class="btn-link">放入书架</p>
+                </div>
+            </div>
+            <!-- 打赏内容 -->
+            <div class="page-container reward-container clearfix">
+                <div class="reward-details fleft">
+                    <p class="reward-title">投票互动</p>
+                    <div class="reward-list clearfix">
+                        <div class="reward-item fleft">
+                            <p class="reward-item-title">
+                                <span class="reward-diff">月票</span>
+                                <span class="reward-line">|</span>
+                                <span>推荐票</span>
+                            </p>
+                            <p class="reward-item-ticket">打赏人数</p>
+                            <p class="reward-item-number">119</p>
+                            <p class="reward-item-rank">排名110</p>
+                            <p class="reward-item-icon"><img src="../static/img/grade-ticket.png" /></p>
+                            <p class="reward-item-btn">投月票</p>
+                        </div>
+                        <div class="reward-item fleft">
+                            <p class="reward-item-title">
+                                <span class="reward-diff">打赏</span>
+                                <span class="reward-line">|</span>
+                                <span>评分票</span>
+                            </p>
+                            <p class="reward-item-ticket">本周票数</p>
+                            <p class="reward-item-number">8</p>
+                            <p class="reward-item-rank"></p>
+                            <p class="reward-item-icon"><img src="../static/img/grade-ticket.png" /></p>
+                            <p class="reward-item-btn">打赏作者</p>
+                        </div>
+                        <div class="reward-interaction fleft">
+                            <p class="reward-interaction-title">本书互动记录</p>
+                            <div class="reward-interaction-list">
+                                <p class="reward-interaction-item clearfix">
+                                    <span class="fleft user-name">用户01</span>
+                                    <span class="fright">
+                            <i class="reward-interaction-diff">投了</i>
+                            <i>4张推荐票</i>
+                        </span>
+                                </p>
+                                <p class="reward-interaction-item clearfix">
+                                    <span class="fleft user-name">用户01</span>
+                                    <span class="fright">
+                            <i class="reward-interaction-diff">投了</i>
+                            <i>4张推荐票</i>
+                        </span>
+                                </p>
+                                <p class="reward-interaction-item clearfix">
+                                    <span class="fleft user-name">用户01</span>
+                                    <span class="fright">
+                            <i class="reward-interaction-diff">投了</i>
+                            <i>4张推荐票</i>
+                        </span>
+                                </p>
+                                <p class="reward-interaction-item clearfix">
+                                    <span class="fleft user-name">用户01</span>
+                                    <span class="fright">
+                            <i class="reward-interaction-diff">投了</i>
+                            <i>4张推荐票</i>
+                        </span>
+                                </p>
+                                <p class="reward-interaction-item clearfix">
+                                    <span class="fleft user-name">用户01</span>
+                                    <span class="fright">
+                            <i class="reward-interaction-diff">投了</i>
+                            <i>4张推荐票</i>
+                        </span>
+                                </p>
+                                <p class="reward-interaction-item clearfix">
+                                    <span class="fleft user-name">用户01</span>
+                                    <span class="fright">
+                            <i class="reward-interaction-diff">投了</i>
+                            <i>4张推荐票</i>
+                        </span>
+                                </p>
+                                <p class="reward-interaction-item clearfix">
+                                    <span class="fleft user-name">用户01</span>
+                                    <span class="fright">
+                            <i class="reward-interaction-diff">投了</i>
+                            <i>4张推荐票</i>
+                        </span>
+                                </p>
+                                <p class="reward-interaction-item clearfix">
+                                    <span class="fleft user-name">用户01</span>
+                                    <span class="fright">
+                            <i class="reward-interaction-diff">投了</i>
+                            <i>4张推荐票</i>
+                        </span>
+                                </p>
+                                <p class="reward-interaction-item clearfix">
+                                    <span class="fleft user-name">用户01</span>
+                                    <span class="fright">
+                            <i class="reward-interaction-diff">投了</i>
+                            <i>4张推荐票</i>
+                        </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar fright">
+                    <div class="sidebar-name clearfix">
+                        <span class="sidebar-title fleft">粉丝榜</span>
+                        <a href="#" class="sidebar-link fright">更多>></a>
+                    </div>
+                    <div class="sidebar-list">
+                        <div class="sidebar-item clearfix">
+                            <div class=" clearfix fleft">
+                                <div class="sidebar-item-rank fleft sidebar-item-1">1</div>
+                                <p class="sidebar-user-name fleft">大梨子</p>
+                            </div>
+                            <p class="sidebar-item-label fright">贵妃</p>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class=" clearfix fleft">
+                                <div class="sidebar-item-rank fleft sidebar-item-2">2</div>
+                                <p class="sidebar-user-name fleft">大梨子</p>
+                            </div>
+                            <p class="sidebar-item-label fright">贵妃</p>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class=" clearfix fleft">
+                                <div class="sidebar-item-rank fleft sidebar-item-3">3</div>
+                                <p class="sidebar-user-name fleft">大梨子</p>
+                            </div>
+                            <p class="sidebar-item-label fright">贵妃</p>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class=" clearfix fleft">
+                                <div class="sidebar-item-rank fleft">4</div>
+                                <p class="sidebar-user-name fleft">大梨子</p>
+                            </div>
+                            <p class="sidebar-item-label fright">贵妃</p>
+                        </div>
+                        <div class="sidebar-item clearfix">
+                            <div class=" clearfix fleft">
+                                <div class="sidebar-item-rank fleft">5</div>
+                                <p class="sidebar-user-name fleft">大梨子</p>
+                            </div>
+                            <p class="sidebar-item-label fright">贵妃</p>
+                        </div>
+                        <div class="sidebar-item sidebar-empty-item clearfix">
+                            <div class="sidebar-item-rank fleft">6</div>
+                            <div class="sidebar-book-name fleft"><span>暂无</span></div>
+                        </div>
+                        <div class="sidebar-item sidebar-empty-item clearfix">
+                            <div class="sidebar-item-rank fleft">7</div>
+                            <div class="sidebar-book-name fleft"><span>暂无</span></div>
+                        </div>
+                        <div class="sidebar-item sidebar-empty-item clearfix">
+                            <div class="sidebar-item-rank fleft">8</div>
+                            <div class="sidebar-book-name fleft"><span>暂无</span></div>
+                        </div>
+                        <div class="sidebar-item sidebar-empty-item clearfix">
+                            <div class="sidebar-item-rank fleft">9</div>
+                            <div class="sidebar-book-name fleft"><span>暂无</span></div>
+                        </div>
+                        <div class="sidebar-item sidebar-empty-item clearfix">
+                            <div class="sidebar-item-rank fleft">10</div>
+                            <div class="sidebar-book-name fleft"><span>暂无</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 评论内容 -->
+            <div class="page-container comment-container">
+                <div class="clearfix">
+                    <p class="comment-title fleft">
+                        <span>评论</span>
+                        <span class="comment-line"></span>
+                        <span class="comment-data">188 条评论</span>
+                    </p>
+                    <p class="btn-publish fright">
+                        <span class="icon-more icon-publish"></span>
+                        <span>发表评论</span>
+                    </p>
+                </div>
+                <div class="comment-tabs clearfix">
+                    <div class="comment-tabs-item fleft">最新</div>
+                    <div class="comment-tabs-item comment-tabs-bar fleft">精华</div>
+                </div>
+                <div class="comment-tabs-container">
+                    <div class="comment-tabs-list">
+                        <div class="comment-list-item clearfix">
+                            <div class="fleft">
+                                <p class="user-head"><img src="../static/img/author-head.png" /></p>
+                                <p class="user-name">大梨子</p>
+                                <p class="user-grad">高级</p>
+                            </div>
+                            <div class="user-info fright">
+                                <div class="user-title clearfix">
+                                    <p class="fleft">
+                                        <i class="btn-classify"></i>
+                                        <i class="user-seat">1楼</i>
+                                    </p>
+                                    <p class="update-time fright">刚刚</p>
+                                </div>
+                                <p class="user-comment">谢谢各位读者对我，以及对我作品的支持！ 我会更加女里的码文~ 么么哒~
+
+                                </p>
+                                <div class="clearfix">
+                                    <span class="comment-update-time fleft">2018-7-16 5:58:58</span>
+                                    <p class="reply fright">
+                                        <i class="icon-more icon-gray-info"></i>
+                                        <i>回复</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-list-item clearfix">
+                            <div class="fleft">
+                                <p class="user-head"><img src="../static/img/author-head.png" /></p>
+                                <p class="user-name">大梨子</p>
+                                <p class="user-grad">高级</p>
+                            </div>
+                            <div class="user-info fright">
+                                <div class="user-title clearfix">
+                                    <p class="fleft">
+                                        <i class="btn-classify"></i>
+                                        <i class="user-seat">1楼</i>
+                                    </p>
+                                    <p class="update-time fright">刚刚</p>
+                                </div>
+                                <p class="user-comment">谢谢各位读者对我，以及对我作品的支持！ 我会更加女里的码文~ 么么哒~
+
+                                </p>
+                                <div class="clearfix">
+                                    <span class="comment-update-time fleft">2018-7-16 5:58:58</span>
+                                    <p class="reply fright">
+                                        <i class="icon-more icon-gray-info"></i>
+                                        <i>回复</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-list-item clearfix">
+                            <div class="fleft">
+                                <p class="user-head"><img src="../static/img/author-head.png" /></p>
+                                <p class="user-name">大梨子</p>
+                                <p class="user-grad">高级</p>
+                            </div>
+                            <div class="user-info fright">
+                                <div class="user-title clearfix">
+                                    <p class="fleft">
+                                        <i class="btn-classify"></i>
+                                        <i class="user-seat">1楼</i>
+                                    </p>
+                                    <p class="update-time fright">刚刚</p>
+                                </div>
+                                <p class="user-comment">谢谢各位读者对我，以及对我作品的支持！ 我会更加女里的码文~ 么么哒~
+
+                                </p>
+                                <div class="clearfix">
+                                    <span class="comment-update-time fleft">2018-7-16 5:58:58</span>
+                                    <p class="reply fright">
+                                        <i class="icon-more icon-gray-info"></i>
+                                        <i>回复</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-tabs-list"></div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-container clearfix">
+                <div class="footer-info fleft">
+                    <div class="clearfix">
+                        <p class="footer-bar fleft">关于我们</p>
+                        <p class="footer-bar fleft">|</p>
+                        <p class="footer-bar fleft">网站帮助</p>
+                        <p class="footer-bar fleft">|</p>
+                        <p class="footer-bar fleft">约稿函</p>
+                        <p class="footer-bar fleft">|</p>
+                        <p class="footer-bar fleft">作者福利</p>
+                        <p class="footer-bar fleft">|</p>
+                        <p class="footer-bar fleft">联系我们</p>
+                        <p class="footer-bar fleft">|</p>
+                        <p class="footer-bar fleft">不良作品举报</p>
+                        <p class="footer-bar fleft">|</p>
+                        <p class="footer-bar fleft">使用协议</p>
+                    </div>
+                    <p>落尘文学 版权所有 南京落尘文化传媒有限公司</p>
+                    <p>Copyright © 2015 luochen.com All Rights Reserved.</p>
+                    <p>beian苏公网安备32011802010036号</p>
+                    <p>苏ICP备15058187号-1 苏网文[2016]1256-037号 增值电信业务许可证 苏B2-20160257</p>
+                </div>
+                <div class="footer-list fright clearfix">
+                    <div class="footer-item fleft">
+                        <p class="footer-item-name">关注本站</p>
+                        <p class="footer-item-introduce"><span></span>微信公众号</p>
+                        <p class="footer-item-introduce"><span></span>新浪微博</p>
+                    </div>
+                    <div class="footer-item fleft">
+                        <p class="footer-item-name">APP下载</p>
+                        <p class="footer-item-introduce"><span></span>安卓客户端</p>
+                        <p class="footer-item-introduce"><span></span>苹果客户端</p>
+                        <p class="footer-item-introduce"><span></span>手机预览</p>
+                    </div>
+                    <div class="footer-item fleft">
+                        <p class="footer-code"><img src="" /></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../components/layer/layer.js"></script>
+        <script type="text/javascript">
+            var page = {
+                init: function() {
+                    this.showContainer();
+                    this.showModel();
+                },
+                showContainer: function() {
+                    var len = $(".book-introduce-container").text();
+                    var intrLen = len.replace(/(^\s+)|(\s+$)/g, ""); //处理字符串中空格
+                    if (intrLen.length > 85 && typeof intrLen == "string") {
+                        $(".book-introd").addClass("book-open-introd");
+                    } else {
+                        return false;
+                    }
+                    $(".book-introduce-open").click(function() {
+                        $(".book-introd").removeClass("book-open-introd").addClass("book-close-introd");
+                    })
+                    $(".book-introduce-close").click(function() {
+                        $(".book-introd").removeClass("book-close-introd").addClass("book-open-introd");
+                    })
+                },
+                selectMode: function() {
+                    $(".select-tabs").click(function() {
+                        $(this).addClass("select-cur-tabs");
+                        $(this).siblings().removeClass("select-cur-tabs");
+                    })
+                },
+                showModel: function() {
+                    var _this = this;
+                    $(".reward-item-btn").click(function() {
+                        layer.open({
+                            type: 1,
+                            title: false,
+                            closeBtn: 0,
+                            shadeClose: true,
+                            skin: 'myContainer',
+                            content: ' <div class="reward">\
+            <div class="select-container clearfix">\
+                <div class="select-tabs select-cur-tabs fleft">\
+                    <div class="select-tabs-item"> 推荐票<span class="select-item-line">\
+                            </span>\
+                    </div>\
+                    <div class="select-tabs-container">\
+                        <p class="icon-ticket">\
+                            <img src="../static/img/tui-ticket.png" />\
+                        </p>\
+                        <div class="select-number clearfix">\
+                            <span class="buy-title fleft"> 选择数量 </span>\
+                            <p class="purchase fleft">\
+                                <span class="remove-buy fleft"> <img src = "../static/img/add.png" > </span>\
+                                <span class="fleft buy-value"> 1 </span>\
+                                <span class="add-buy fleft"> <img src = "../static/img/remove.png" > </span>\
+                            </p>\
+                        </div>\
+                        <p class="prompt-tickt"> （本日剩余 3 张推荐票) <span class="icon-reward icon-reward-why"></span></p>\
+                        <p class="btn-recom"> 投递推荐票 </p>\
+                    </div>\
+                </div>\
+                <div class="select-tabs fleft">\
+                    <div class="select-tabs-item"> 月票 <span class="select-item-line"> </span></div>\
+                    <div class="select-tabs-container">\
+                        <p class="icon-ticket"> <img src="../static/img/month-ticket.png" /> </p>\
+                        <div class="select-number clearfix">\
+                            <span class="buy-title fleft"> 选择数量 </span>\
+                            <p class="purchase fleft">\
+                                <span class="remove-buy fleft"> <img src = "../static/img/add.png" > </span>\
+                                <span class="fleft buy-value"> 1 </span>\
+                                <span class="add-buy fleft"> <img src = "../static/img/remove.png" > </span>\
+                            </p>\
+                        </div>\
+                        <p class="prompt-tickt"> （本日剩余 3 张月票) <span class="icon-reward icon-reward-why"> </span></p>\
+                        <p class="btn-recom"> 投递月票 </p>\
+                    </div>\
+                </div>\
+                <div class="select-tabs fleft">\
+                    <div class="select-tabs-item"> 评分票 <span class="select-item-line"> </span></div>\
+                    <div class="select-tabs-container">\
+                        <ul class="stars-list clearfix">\
+                            <li class="stars-item icon-star icon-star-yellow fleft"> </li>\
+                            <li class="stars-item icon-star icon-star-yellow fleft"> </li>\
+                            <li class="stars-item icon-star icon-star-yellow fleft"> </li>\
+                            <li class="stars-item icon-star icon-star-yellow fleft"> </li>\
+                            <li class="stars-item icon-star icon-star-yellow fleft"> </li>\
+                        </ul>\
+                        <p class="stars-text"> 值的一看 </p>\
+                        <p class="stars-prompt"> （本日剩余 3 张评分票)<span class="icon-reward icon-reward-why"> </span></p>\
+                        <p class="btn-stars"> 投评分票</p>\
+                    </div>\
+                </div>\
+                <div class="select-tabs fleft">\
+                    <div class="select-tabs-item"> 打赏<span class="select-item-line"></span>\
+                    </div>\
+                    <div class="select-tabs-container">\
+                        <form>\
+                            <ul class="select-mode clearfix">\
+                                <li class="select-mode-item select-mode-cur fleft">\
+                                    <p class="select-pic">\
+                                        <img src="../static/img/icon-xr.png" />\
+                                    </p>\
+                                    <p class="icon-reward icon-reward-ok"></p>\
+                                    <p class="select-name"> 香囊</p>\
+                                    <p class="getNumber"> 已收4个</p>\
+                                </li>\
+                                <li class="select-mode-item fleft">\
+                                    <p class="select-pic">\
+                                        <img src="../static/img/icon-yl.png" />\
+                                    </p>\
+                                    <p class="icon-reward icon-reward-ok">\
+                                    </p>\
+                                    <p class="select-name">银铃</p>\
+                                    <p class="getNumber"> 已收0串</p>\
+                                    </i>\
+                                    <li class="select-mode-item fleft">\
+                                        <p class="select-pic">\
+                                            <img src="../static/img/icon-sz.png" />\
+                                        </p>\
+                                        <p class="icon-reward icon-reward-ok">\
+                                        </p>\
+                                        <p class="select-name"> 玉环</p>\
+                                        <p class="getNumber"> 已收0对</p>\
+                                    </li>\
+                                    <li class="select-mode-item fleft">\
+                                        <p class="select-pic">\
+                                            <img src="../static/img/icon-jz.png" />\
+                                        </p>\
+                                        <p class="icon-reward icon-reward-ok">\
+                                        </p>\
+                                        <p class="select-name">金镯 </p>\
+                                        <p class="getNumber"> 已收0支</p>\
+                                    </li>\
+                                    <li class="select-mode-item select-mod-diff fleft">\
+                                        <p class="select-pic">\
+                                            <img src="../static/img/icon-hg.png" />\
+                                        </p>\
+                                        <p class="icon-reward icon-reward-ok">\
+                                        </p>\
+                                        <p class="select-name">皇冠</p>\
+                                        <p class="getNumber"> 已收0顶</p>\
+                                    </li>\
+                            </ul>\
+                            <div class="buy clearfix">\
+                                <div class="fleft clearfix">\
+                                    <span class="buy-title fleft"> 数量 </span>\
+                                    <p class="purchase fleft">\
+                                        <span class="remove-buy fleft"> <img src = "../static/img/add.png" / ></span>\
+                                        <span class="fleft buy-value"> 1 </span> <span class="add-buy fleft"> \
+                    <img src = "../static/img/remove.png" / > </span> </p>\
+                                    <span> 个香囊 </span> <span class="buy-diff"> 相当于100点书币 </span></div>\
+                                <span class="btn-pay fright"> 去充值 </span>\
+                            </div>\
+                            <div class="message clearfix">\
+                                <span class="buy-title fleft"> 赠言 </span>\
+                                <input type="text" placeholder="支持作者文思泉涌，妙笔生花" class="input-text fright" />\
+                            </div>\
+                            <p class="prompt">\
+                                <span> 道具捧场后将获得粉丝奖励值 </span>\
+                                <class="doubt icon-reward icon-reward-why">\
+                                    </span>\
+                            </p>\
+                            <p class="btn-reward"> 打赏作品 </p>\
+                        </form>\
+                    </div>\
+                </div>\
+                <p class="btn-close icon-reward icon-reward-close"> </p>\
+            </div>\
+        </div>',
+                            success: function(layero, index) {
+                                $(".btn-close").click(function() {
+                                    layer.close(index);
+                                })
+                                _this.selectMode();
+                            }
+                        });
+                    })
+                }
+            }
+            page.init();
+        </script>
+    </div>
+</body>
+
+</html>

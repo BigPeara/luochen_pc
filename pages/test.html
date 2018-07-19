@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/icon/icon.css">
+    <link rel="stylesheet" href="../components/swiper/idangerous.swiper.css">
+    <style>
+        button{
+            margin: 50px;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<button>表情1</button>
+<button>表情2</button>
+<button>表情3</button>
+<button>表情4</button>
+<button>表情5</button>
+
+
+<script src="../static/js/jquery-1.12.2.min.js"></script>
+<script src="../components/emoji/index.js"></script>
+<script>
+
+    $("button").on('click',function () {
+        var self = $(this);
+        $.emoji.init({
+            bind: self,
+            click:function (val) {
+            }
+        });
+    })
+</script>
+</body>
+</html>
+

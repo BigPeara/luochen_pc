@@ -1,0 +1,299 @@
+.manito-hot-author{
+    width: 100%;
+    height: 375px;
+    background-color: #fff;
+    margin: 20px 0;
+    
+
+}
+.manito-hot-author .hot-author {
+    padding: 20px 30px 40px 20px;
+   width: 795px;
+   height: 315px;
+   border-right: 1px solid #e8e8e8;
+}
+.manito-hot-author .hot-author  .hot-author-bookcover{
+    width: 220px;
+    height: 312px;
+    margin-right: 30px;
+  
+}
+.manito-hot-author .hot-author .hot-author-info{
+    width: 544px;
+}
+.manito-hot-author .hot-author .hot-author-info .hot-author-headline{
+    height: 48px;
+    line-height: 48px;
+    color: #FF4192;
+    font-size: 24px;
+    border-bottom:1px solid #F1F1F1;
+    margin-bottom: 16px;
+
+}
+.manito-hot-author .hot-author .hot-author-info .icon-float-user{
+    margin-top: 3px;
+}
+.manito-hot-author .hot-author .hot-author-info .hot-author-name{
+    font-size: 18px;
+    line-height: 21px;
+    color: #333;
+    margin-left: 8px; 
+    font-weight: 700;
+}
+.manito-hot-author .hot-author .hot-author-info .hot-auhor-detail{
+    margin-left:18px; 
+}
+.manito-hot-author .hot-author .hot-author-info .hot-auhor-detail .hot-author-label{
+    line-height: 21px;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 25px
+}
+.manito-hot-author .hot-author .hot-author-info .hot-auhor-detail .hot-author-books{
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    margin-left: -5px;
+}
+.manito-hot-author .hot-author .hot-author-info .interview-detail{
+    margin-top: 90px;
+}
+.manito-hot-author .hot-author .hot-author-info .interview-detail .interview-time{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 16px;
+    font-weight: 600; 
+}
+.manito-hot-author .hot-author .hot-author-info .interview-detail .interview-content{
+    font-size: 12px;
+    color:#333;
+    font-weight: 600;
+    line-height: 24px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.manito-hot-author .hot-author .hot-author-info .interview-detail .link-lookMore{
+    font-size: 12px;
+    color: #999;
+}
+.manito-hot-author .hot-author .hot-author-info .interview-detail .hot-author-lookMore{
+    margin-top: 20px
+}
+.manito-hot-author .hot-author .hot-author-info .interview-detail .link-lookMore .icon-more-btn{
+    width: 5px;
+    height: 10px;
+    margin: 5px 0 0 10px;
+}
+/*  */
+.author-interview{
+    width: 234px;
+    height: 375px;
+}
+.author-interview-headline{
+    font-size: 18px;
+    color: #333;
+    padding: 17px  0 14px 20px;
+}
+.author-interview-info{
+    padding-left: 20px;
+}
+.author-interview-item{
+    padding-bottom: 15px;
+}
+.author-interview-head{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    margin-right: 20px
+}
+.author-interview-detail{
+    margin-top: 10px;
+}
+.author-interview .author-interview-detail .icon-float-user{
+    font-size: 12px;
+    color: #999;
+    margin: 5px 10px 0 0;
+
+}
+.author-interview-name{
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+}
+.author-interview-label{
+    font-size: 12px;
+    color: #999;
+}
+/* 驻站大神*/
+.manito-station-contrainer{
+    width: 1080px;
+    height: 424px;
+    background-color: #fff;
+    margin-bottom: 20px
+}
+.manito-station-contrainer .station-headline{
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+    height: 49px;
+    line-height: 49px;
+    font-weight: 600;
+    border-bottom: 1px solid #f1f1f1;
+}
+/* .btn-author-prev{
+    width: 60px;
+    height: 100%;
+} */
+.station-author-books{
+    position: relative;
+}
+.book-contrainer{
+    width: 100%;
+    height: 370px;
+}
+.author-book-item{
+    padding: 40px 60px;
+}
+.author-book-detail{
+    width: 239px;
+    height: 290px;
+    border-right: 1px solid #f1f1f1;
+}
+.author-book-detail-contrainer{
+    width: 120px;
+    margin: 0 auto;
+}
+.author-book-detail-head{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+.author-book-detail-name{
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto 10px;
+}
+.author-book-detail-intrduce{
+    font-size: 12px;
+    color: #999;
+    line-height: 16px;
+    margin-bottom: 15px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.station-author-booKname{
+    font-size: 12px;
+    color: #FF4192;
+    margin-bottom: 8px;
+    text-align: center
+}
+.author-book-info{
+    position: relative;
+    margin: 40px auto;
+    width: 960px;
+    height: 300px;
+}
+.author-book-info:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width:5px;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+.author-book-info li:nth-last-child(1){
+    border-right: none;
+}
+.btn-author-prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -24px;
+    cursor: pointer;
+}
+.btn-author-next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -24px;
+    cursor: pointer;
+}
+/* 大神推荐 */
+.recommend-contrainer{
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.recommend-contrainer .recommend-title-box{
+    width: 59px;
+    height: 290px;
+    border-right:1px solid #E8E8E8;
+}
+.recommend-contrainer .recommend-title-box .recommend-title{
+    width: 20px;
+    line-height: 24px;
+    font-size:18px;
+    color: #333;
+    margin: 97px auto;
+}
+.recommend-contrainer .recommed-list{
+    padding: 30px 30px 0 30px;
+}
+.recommend-contrainer .recommed-list .recommed-book-info{
+    width: 120px;
+    margin-right: 48px;
+}
+.recommend-contrainer .recommed-list .recommed-book-info.last-recommed-bookInfo{
+    margin-right: 0;
+}
+.recommend-contrainer .recommed-list .recommed-book-info .link-recommed-book-cover{
+    width: 120px;
+    height: 171px;
+    display: block;
+}
+.recommend-contrainer .recommed-list .recommed-book-info .recommed-book-cover{
+    width: 120px;
+    height: 171px;
+}
+.recommend-contrainer .recommed-list .recommed-book-info .recommed-book-name{
+    font-size: 16px;
+    color: #333;
+    width: 120px;
+    display: block;
+    margin: 20px 0 12px 0;
+}
+.recommed-book-author{
+    width: 92px;
+    text-align: center;
+    line-height: 13px;
+    color: #999;
+    font-size: 12px;
+    margin: 0 auto;
+}
+/* 大神作品推荐高度修改 */
+.recommend-contrainer .recommend-title-box .recommend-title.manito-recommend-title{
+margin: 73px auto;
+}

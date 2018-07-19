@@ -1,0 +1,68 @@
+
+.search-left{  width: 778px;  height: 1154px;  background-color: #fff;  margin: 20px 0;  }
+.search-result{  font-size: 14px;  color: #999;  overflow: hidden;  }
+.search-result p{  margin: 24px 0 0 32px;  }
+.book-container{background-color: #fff;margin-bottom: 20px;}
+.book-container .book-list{padding-bottom: 31px;}
+.book-container .book-item{border-bottom: 1px solid #F1F1F1;margin: 0 30px;padding: 30px 0;}
+.book-container .book-cover{width: 108px;height: 154px;}
+.book-container .book-cover .book-cover-link{  width: 100%;height: 100%;display: block;  }
+.book-container .book-cover .book-cover-img{  width: 100%; height: 100%;display: block;  }
+.book-container .book-info{margin-left: 23px;width: 391px;}
+.book-container .book-name{line-height: 1;margin-top: 13px;display: block; color: #333}
+.book-container .book-author{margin-top: 15px;}
+.book-container .book-label{font-size: 12px;color: #999;margin:15px 0 0 20px;}
+.book-container .book-state{font-size: 12px;color: #999;margin: 15px 0 0 20px;}
+.book-container .book-hasLook{font-size: 12px;color: #999;margin: 15px 0 0 20px;}
+.book-container .book-introduce{font-size: 14px;color: #666;line-height: 24px;margin-top: 18px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.book-container .book-update{font-size: 12px;color: #FF4192;line-height: 1;margin-top: 12px;}
+.book-container .book-hasUpdate{width: 8px;height: 8px;background-color: #FF4192;display: inline-block;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%;margin-right: 6px;vertical-align: 0.1ex;}
+.book-container .book-update-time{color: #B5B5B5;font-size: 12px;margin-left: 19px;}
+.book-container .btn-bookshelf{display: block; margin-top: 55px; width: 130px;height: 34px;border-radius: 34px;}
+.book-container .btn-read{display: block; width: 130px;height: 34px;border-radius: 17px;margin-top: 20px;}
+.search-right{  width: 282px;  height: 1154px; margin: 20px 0 20px 20px;  overflow: hidden;  }
+.read-box{  width: 100%;  height: 450px;  background-color: #fff;  }
+.everyone-read{  font-size: 24px;  color: #333;  padding: 15px 24px;  }
+.read-classify{  width: 100%;  height: 389px;  position: relative;  }
+.classify-link-one{  position: absolute;  top: 30px;  right: 30px;  }
+.book-label-read{  width: 75px;  height: 30px;  line-height: 30px;  text-align: center;  background-color: #F4CF48;  font-size: 14px;  color: #D6BD61;  float: left;  }
+.tri-right{width:0;height:0;border-width:15px 0 15px 15px;border-style:solid;border-color:transparent transparent transparent #F4CF48;float: left;}
+.classify-link-two{ position: absolute;  top: 58px;  left: 30px; }
+.tri-left{width:0;height:0;border-width:15px 15px 15px 0;border-style:solid;border-color:transparent #F4A948 transparent transparent;float: left;}
+.classify-link-two .book-label-read{ color: #D89D52; background-color: #F4A948;}
+.classify-link-three{position: absolute;  top: 88px;  right: 8px;}
+.classify-link-three .tri-right{  border-color:transparent transparent transparent #64CCF0;  }
+.classify-link-three .book-label-read{  color: #4FACC9; background-color: #64CCF0;  }
+.classify-link-four{ position: absolute;  top: 117px;  left: 50px; }
+.classify-link-four .tri-left{  border-color:transparent #F77CD6 transparent transparent;  }
+.classify-link-four .book-label-read{  color: #CF4AAC; background-color: #F77CD6;  }
+.classify-link-five {position: absolute;  top: 149px;  right: 34px;}
+.classify-link-five .tri-right{  border-color:transparent transparent transparent #F66E79;  }
+.classify-link-five .book-label-read{  color: #C35959; background-color: #F66E79;  }
+.classify-link-six{  position: absolute;  top: 195px;  left: 52px;  }
+.classify-link-six .tri-right{  border-color:transparent transparent transparent #F48148;  }
+.classify-link-six .book-label-read{  color: #DE723E; background-color: #F48148;  }
+.classify-link-seven{  position: absolute;  left: 20px;  top: 268px;}
+.classify-link-seven .tri-left{  border-color:transparent #FF9FC8 transparent transparent;  }
+.classify-link-seven .book-label-read{  color: #CD5587; background-color: #FF9FC8;  }
+.classify-link-eight{  position: absolute;  right: 24px;  top: 260px;}
+.classify-link-eight .tri-right{  border-color:transparent transparent transparent #649FF0;  }
+.classify-link-eight .book-label-read{  color: #3D76C2; background-color: #649FF0;  }
+.classify-link-nine{  position: absolute;  left: 100px;  top: 320px;}
+.classify-link-nine .tri-right{  border-color:transparent transparent transparent #74DDDB;  }
+.classify-link-nine .book-label-read{  color: #2EABA7; background-color: #74DDDB;  }
+.week-recommend{  width: 282px;  height: 684px;  background-color: #fff;  margin-top: 20px;  overflow: hidden;  }
+.week-recommend .sidebar-title, .update-container .sidebar .sidebar-title{font-size: 24px;line-height: 22px;color: #333;margin:26px 0 0 26px;}
+.week-recommend .sidebar-item, .update-container .sidebar .sidebar-item{margin-top: 22px;}
+.week-recommend .sidebar-item-rank,.update-container .sidebar .sidebar-item-rank{font-size: 18px;color: #999;font-style: italic;margin-left: 28px;width: 20px;height: 20px;background-color: #fff;}
+.week-recommend .sidebar-item-1,.update-container .sidebar .sidebar-item-1{background-color: #FFCA4B;width: 20px;height: 20px;line-height: 20px;text-indent: 2.5px;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;}
+.week-recommend .sidebar-item-2,.update-container .sidebar .sidebar-item-2{background-color: #FF974B;width: 20px;height: 20px;line-height: 20px;text-indent: 2.5px;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;}
+.week-recommend .sidebar-item-3,.update-container .sidebar .sidebar-item-3{background-color: #FF604B;width: 20px;height: 20px;line-height: 20px;text-indent: 2.5px;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;}
+.week-recommend .book-item,.update-container .sidebar .book-item{margin-left: 24px;}
+.week-recommend .book-cover,.update-container .sidebar .book-cover{width: 82px;height: 115px;border-radius: 4px;-webkit-border-radius: 4px;-ms-border-radius: 4px;-moz-border-radius: 4px;-o-border-radius: 4px;overflow: hidden;}
+.week-recommend .book-cover img,.update-container .sidebar .book-cover img{display: block;width: 100%;height: 100%;}
+.week-recommend .book-info,.update-container .sidebar .book-info{margin-left: 10px;width: 115px;}
+.week-recommend .book-name,.update-container .sidebar .book-name{display:block;font-size: 14px;color: #333;  width: 115px;line-height: 1;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}.week-recommend .book-author,.update-container .sidebar .book-author{font-size: 12px;color: #999;line-height: 1;margin-top: 15px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.week-recommend .book-label,.update-container .sidebar .book-label{font-size: 12px;color: #FF4192;line-height: 1;margin-top: 49px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.week-recommend .sidebar-book-name,.update-container .sidebar .sidebar-book-name{margin-left: 26px;font-size: 14px;color: #333;line-height: 24px;width: 180px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.week-recommend .link-look-more{  width: 57px;  height:16px;  display: block;  color: #999;  font-size: 14px;  margin: 35px auto 0;  }
