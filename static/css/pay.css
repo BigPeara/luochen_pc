@@ -135,6 +135,11 @@
     height: 20px;
     line-height: 20px;
     padding: 0 20px;
+    width: 200px;
+}
+
+.choose-money-detail-box .paypal-pay {
+    width: 215px;
 }
 
 .choose-money-detail-box .choose-money-detail-item .money-selected-light {
@@ -176,7 +181,7 @@
 .book-money {
     font-size: 16px;
     color: #000;
-    margin-left: 20px;
+    margin-left: 15px;
     font-weight: 600;
 }
 

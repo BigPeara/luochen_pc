@@ -41,6 +41,15 @@
             };
             return array;
         },
+        //手机号码验证
+        validatePhone(phone){
+            var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+            if(!myreg.test(phone))
+            {
+                return false;
+            }
+            return true
+        }
     });
     /**
      * $.fn

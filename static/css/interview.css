@@ -1,4 +1,5 @@
 .interview-container{
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .interview-book-name {
@@ -75,7 +76,7 @@
 
 .interview-info .cooperation-book-item .cooperation-book-name {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
     display: block;
 }

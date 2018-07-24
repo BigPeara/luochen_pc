@@ -23,7 +23,7 @@
             this.tmlp = '<ul class="banner-container">\
         <li class="banner-item"><a href="#"><img src="../static/img/mv.jpg"></a></li>\
         <li class="banner-item"><a href="#"><img src="../static/img/bef.jpg"></a></li>\
-        <li class="banner-item"><a href="#"><img src="../static/img/ww.jpg"></a></li>\
+        <li class="banner-item"><a href="#"><img src="../static/img/mv.jpg"></a></li>\
         <li class="banner-item"><a href="#"><img src="../static/img/kk.jpg"></a></li>\
     </ul>\
     <ul class="banner-foucs clearfix">\

@@ -127,7 +127,7 @@
                                 </ul>
                             </li>
                             <li class="menu-item">
-                                <div class="menu-title">
+                                <div class="menu-title active">
                                     <i class="icon-center icon-black-money"></i>
                                     <span>财务管理</span>
                                     <img src="../static/img/bottom.png" alt="">
@@ -327,6 +327,7 @@
                         <p class="question-help">在线帮助</p>
                         <p class="question-detail"> 找不到以前的功能怎么办？</p>
                         <p class="question-detail"> 来看看帮助吧!</p>
+                    </div>
                 </li>
                 <li class="question-item fleft clearfix">
                     <i class="fleft icon-hint icon-hint-problem"></i>
@@ -402,30 +403,29 @@
         </div>
         <script src="../static/js/jquery-1.12.2.min.js"></script>
         <script>
-            // 左侧菜单
-            (function () {
-                function menu() {
+            var page = {
+                menu: function () {
                     var $item = $('.menu-item');
                     $item.each(function () {
                         var $this = $(this).find('.menu-title');
-                        var arrow = $this.find('img');
                         var children = $(this).find('.children-menu');
                         $this.on('click', function () {
                             if (children.css('display') == 'none') {
                                 $this.addClass('active');
                                 children.slideDown(100);
-                                arrow.attr('src', '../static/img/bottom.png')
                             } else {
                                 $this.removeClass('active');
                                 children.slideUp(100);
-                                arrow.attr('src', '../static/img/top.png')
                             }
 
                         })
                     })
+                },
+                init: function () {
+                    page.menu();
                 }
-                menu();
-            })()    
+            };
+            page.init();
         </script>
 </body>
 

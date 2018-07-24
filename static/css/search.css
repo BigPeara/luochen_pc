@@ -18,39 +18,33 @@
 .book-container .book-update{font-size: 12px;color: #FF4192;line-height: 1;margin-top: 12px;}
 .book-container .book-hasUpdate{width: 8px;height: 8px;background-color: #FF4192;display: inline-block;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%;margin-right: 6px;vertical-align: 0.1ex;}
 .book-container .book-update-time{color: #B5B5B5;font-size: 12px;margin-left: 19px;}
-.book-container .btn-bookshelf{display: block; margin-top: 55px; width: 130px;height: 34px;border-radius: 34px;}
+.book-container .btn-bookshelf{display: block; margin-top: 55px; width: 130px;height: 34px;border-radius: 34px;font-size: 16px;}
 .book-container .btn-read{display: block; width: 130px;height: 34px;border-radius: 17px;margin-top: 20px;}
 .search-right{  width: 282px;  height: 1154px; margin: 20px 0 20px 20px;  overflow: hidden;  }
-.read-box{  width: 100%;  height: 450px;  background-color: #fff;  }
+.read-box{  width: 100%;  height: 360px;  background-color: #fff;  }
 .everyone-read{  font-size: 24px;  color: #333;  padding: 15px 24px;  }
-.read-classify{  width: 100%;  height: 389px;  position: relative;  }
-.classify-link-one{  position: absolute;  top: 30px;  right: 30px;  }
-.book-label-read{  width: 75px;  height: 30px;  line-height: 30px;  text-align: center;  background-color: #F4CF48;  font-size: 14px;  color: #D6BD61;  float: left;  }
-.tri-right{width:0;height:0;border-width:15px 0 15px 15px;border-style:solid;border-color:transparent transparent transparent #F4CF48;float: left;}
-.classify-link-two{ position: absolute;  top: 58px;  left: 30px; }
-.tri-left{width:0;height:0;border-width:15px 15px 15px 0;border-style:solid;border-color:transparent #F4A948 transparent transparent;float: left;}
-.classify-link-two .book-label-read{ color: #D89D52; background-color: #F4A948;}
-.classify-link-three{position: absolute;  top: 88px;  right: 8px;}
-.classify-link-three .tri-right{  border-color:transparent transparent transparent #64CCF0;  }
-.classify-link-three .book-label-read{  color: #4FACC9; background-color: #64CCF0;  }
-.classify-link-four{ position: absolute;  top: 117px;  left: 50px; }
-.classify-link-four .tri-left{  border-color:transparent #F77CD6 transparent transparent;  }
-.classify-link-four .book-label-read{  color: #CF4AAC; background-color: #F77CD6;  }
-.classify-link-five {position: absolute;  top: 149px;  right: 34px;}
-.classify-link-five .tri-right{  border-color:transparent transparent transparent #F66E79;  }
-.classify-link-five .book-label-read{  color: #C35959; background-color: #F66E79;  }
-.classify-link-six{  position: absolute;  top: 195px;  left: 52px;  }
-.classify-link-six .tri-right{  border-color:transparent transparent transparent #F48148;  }
-.classify-link-six .book-label-read{  color: #DE723E; background-color: #F48148;  }
-.classify-link-seven{  position: absolute;  left: 20px;  top: 268px;}
-.classify-link-seven .tri-left{  border-color:transparent #FF9FC8 transparent transparent;  }
-.classify-link-seven .book-label-read{  color: #CD5587; background-color: #FF9FC8;  }
-.classify-link-eight{  position: absolute;  right: 24px;  top: 260px;}
-.classify-link-eight .tri-right{  border-color:transparent transparent transparent #649FF0;  }
-.classify-link-eight .book-label-read{  color: #3D76C2; background-color: #649FF0;  }
-.classify-link-nine{  position: absolute;  left: 100px;  top: 320px;}
-.classify-link-nine .tri-right{  border-color:transparent transparent transparent #74DDDB;  }
-.classify-link-nine .book-label-read{  color: #2EABA7; background-color: #74DDDB;  }
+
+.read-classify{  width: 100%;  height: 282px;  position: relative;  }
+.lc-tags{padding: 7px 11px; white-space: nowrap}
+.lc-tags:nth-child(n){ color: #D6BD61;}
+.lc-tags:nth-child(n):hover{ background-color: rgba(244,207,72,.3);}
+.lc-tags:nth-child(2n){ color: #D89D52;}
+.lc-tags:nth-child(2n):hover{ background-color: rgba(244,169,72,.3);}
+.lc-tags:nth-child(3n){ color: #4FACC9;}
+.lc-tags:nth-child(3n):hover{ background-color: rgba(100,204,240,.3);}
+.lc-tags:nth-child(4n){ color: #CF4AAC;}
+.lc-tags:nth-child(4n):hover{ background-color: rgba(247,124,214,.3);}
+.lc-tags:nth-child(5n){ color: #C35959;}
+.lc-tags:nth-child(5n):hover{ background-color: rgba(246,110,121,.3);}
+.lc-tags:nth-child(6n){ color: #DE723E;}
+.lc-tags:nth-child(6n):hover{ background-color: rgba(244,129,72,.3);}
+.lc-tags:nth-child(7n){ color: #CD5587;}
+.lc-tags:nth-child(7n):hover{ background-color: rgba(255,159,200,.3);}
+.lc-tags:nth-child(8n){ color: #3D76C2;}
+.lc-tags:nth-child(8n):hover{ background-color: rgba(100,159,240,.3);}
+.lc-tags:nth-child(9n){ color: #2EABA7;}
+.lc-tags:nth-child(9n):hover{ background-color: rgba(116,221,219,.3);}
+
 .week-recommend{  width: 282px;  height: 684px;  background-color: #fff;  margin-top: 20px;  overflow: hidden;  }
 .week-recommend .sidebar-title, .update-container .sidebar .sidebar-title{font-size: 24px;line-height: 22px;color: #333;margin:26px 0 0 26px;}
 .week-recommend .sidebar-item, .update-container .sidebar .sidebar-item{margin-top: 22px;}
@@ -65,4 +59,9 @@
 .week-recommend .book-name,.update-container .sidebar .book-name{display:block;font-size: 14px;color: #333;  width: 115px;line-height: 1;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}.week-recommend .book-author,.update-container .sidebar .book-author{font-size: 12px;color: #999;line-height: 1;margin-top: 15px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
 .week-recommend .book-label,.update-container .sidebar .book-label{font-size: 12px;color: #FF4192;line-height: 1;margin-top: 49px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
 .week-recommend .sidebar-book-name,.update-container .sidebar .sidebar-book-name{margin-left: 26px;font-size: 14px;color: #333;line-height: 24px;width: 180px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
-.week-recommend .link-look-more{  width: 57px;  height:16px;  display: block;  color: #999;  font-size: 14px;  margin: 35px auto 0;  }
+.week-recommend .link-look-more{ position: relative; height:16px;  display: block;  color: #999;  font-size: 14px;  margin: 35px auto 0;  text-align: center;}
+.week-recommend .link-look-more::after,.week-recommend .link-look-more::before{ content: '';position: absolute;top: 55%;background-color: #F8F2F2;width: 48px;height: 1px;}
+.week-recommend .link-look-more::before{left: 18%;}
+.week-recommend .link-look-more::after{right: 18%;}
+.week-recommend .link-look-more:hover{color: #FF4192;}
+.week-recommend .link-look-more:hover::after,.week-recommend .link-look-more:hover::before{background-color: #FF4192;}

@@ -564,9 +564,8 @@
         </div>
         <script src="../static/js/jquery-1.12.2.min.js"></script>
         <script>
-            // 左侧菜单
-            (function () {
-                function menu() {
+            var page = {
+                menu: function () {
                     var $item = $('.menu-item');
                     $item.each(function () {
                         var $this = $(this).find('.menu-title');
@@ -576,18 +575,19 @@
                             if (children.css('display') == 'none') {
                                 $this.addClass('active');
                                 children.slideDown(100);
-                                arrow.attr('src', '../static/img/bottom.png')
                             } else {
                                 $this.removeClass('active');
                                 children.slideUp(100);
-                                arrow.attr('src', '../static/img/top.png')
                             }
 
                         })
                     })
+                },
+                init: function () {
+                    page.menu();
                 }
-                menu();
-            })()    
+            };
+            page.init();
         </script>
 </body>
 

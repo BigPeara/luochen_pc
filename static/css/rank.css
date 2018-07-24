@@ -25,6 +25,7 @@
 .rank-container .rank-list .rank-item.active .icon-rank-new,
 .rank-container .rank-list .rank-item.active .icon-rank-newBook,
 .rank-container .rank-list .rank-item.active .icon-rank-over,
+
 .rank-container .rank-list .rank-item .icon-pink-all,
 .rank-container .rank-list .rank-item .icon-pink-click,
 .rank-container .rank-list .rank-item .icon-pink-zan,
@@ -55,6 +56,31 @@
 {
     display: block;
 }
+.rank-container .rank-list .rank-item:hover .rank-item-text{
+    color: #FF4192;
+}
+.rank-container .rank-list .rank-item:hover .icon-rank-all,
+.rank-container .rank-list .rank-item:hover .icon-rank-click,
+.rank-container .rank-list .rank-item:hover .icon-rank-zan,
+.rank-container .rank-list .rank-item:hover .icon-rank-chase,
+.rank-container .rank-list .rank-item:hover .icon-rank-pay,
+.rank-container .rank-list .rank-item:hover .icon-rank-new,
+.rank-container .rank-list .rank-item:hover .icon-rank-newBook,
+.rank-container .rank-list .rank-item:hover .icon-rank-over{
+    display: none;
+}
+
+.rank-container .rank-list .rank-item:hover .icon-pink-all,
+.rank-container .rank-list .rank-item:hover .icon-pink-click,
+.rank-container .rank-list .rank-item:hover .icon-pink-zan,
+.rank-container .rank-list .rank-item:hover .icon-pink-chase,
+.rank-container .rank-list .rank-item:hover .icon-pink-pay,
+.rank-container .rank-list .rank-item:hover .icon-pink-new,
+.rank-container .rank-list .rank-item:hover .icon-pink-newBook,
+.rank-container .rank-list .rank-item:hover .icon-pink-over
+{
+    display: block;
+}
 
 /*sidebar*/
 .sidebar-container{width: 856px;}
@@ -70,7 +96,7 @@
 .sidebar-container .sidebar .sidebar-link:hover span:after,
 .sidebar-container .sidebar .sidebar-link:hover span:before{background-color: #FF4192;}
 
-.sidebar-container .sidebar .sidebar-item-rank{font-size: 18px;color: #999;font-style: italic;margin-left: 28px;width: 20px;height: 20px;background-color: #fff;}
+.sidebar-container .sidebar .sidebar-item-rank{font-size: 18px;color: #999;margin-left: 28px;width: 20px;height: 20px;background-color: #fff;text-align: center;}
 .sidebar-container .sidebar .sidebar-item:nth-child(1) .sidebar-item-rank{background-color: #FFCA4B;width: 20px;height: 20px;line-height: 20px;text-indent: 2.5px;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;}
 .sidebar-container .sidebar .sidebar-item:nth-child(2) .sidebar-item-rank{background-color: #FF974B;width: 20px;height: 20px;line-height: 20px;text-indent: 2.5px;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;}
 .sidebar-container .sidebar .sidebar-item:nth-child(3) .sidebar-item-rank{background-color: #FF604B;width: 20px;height: 20px;line-height: 20px;text-indent: 2.5px;color: #fff;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;}
@@ -78,12 +104,13 @@
 .sidebar-container .sidebar .book-cover{width: 82px;height: 115px;border-radius: 4px;-webkit-border-radius: 4px;-ms-border-radius: 4px;-moz-border-radius: 4px;-o-border-radius: 4px;overflow: hidden;}
 .sidebar-container .sidebar .book-cover img{display: block;width: 100%;height: 100%;}
 .sidebar-container .sidebar .book-info{margin-left: 10px;width: 118px;}
+.sidebar-container .sidebar .book-info a:hover{color: #FF4192;}
 .sidebar-container .sidebar .book-name{font-size: 14px;color: #333;line-height: 1;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
 .sidebar-container .sidebar .book-author{font-size: 12px;color: #999;line-height: 1;margin-top: 15px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
 .sidebar-container .sidebar .book-label{font-size: 12px;color: #FF4192;line-height: 1;margin-top: 49px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
 .sidebar-container .sidebar .book-label a{display: inline-block; margin: 0 3px;color: #FF4192;}
 .sidebar-container .sidebar .sidebar-book-name{margin-left: 26px;font-size: 14px;color: #333;line-height: 24px;width: 200px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
-
+.sidebar-container .sidebar .sidebar-book-name:hover a{ color: #FF4192;}
 .sidebar-container .sidebar .sidebar-item.active .book-item{display: block}
 .sidebar-container .sidebar .sidebar-item.active .sidebar-book-name{display: none}
 

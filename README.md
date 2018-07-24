@@ -146,7 +146,7 @@ $('.pagination').pagination({
 > *  currentPage 当前页
 > *  currentPage  页码变化时候的页码数
 
- 返回顶部
+** 返回顶部**
  
 ```
 $.goTop({
@@ -160,3 +160,18 @@ $.goTop({
  > * y 默认为800，滚动条距离顶端距离，当大于这个距离时，返回顶部显示
  > * addHtml,  默认是个小火箭图标，填写可以绑定自己写的dom元素
  
+ **表情包插件**
+ 
+ ```
+ $(element).on('click',function () {
+    var self = $(this);
+    $.emoji.init({
+        el: self,
+        click:function (val) {
+        }
+    });
+})
+ ```
+> * $.emoji使用时需调用init方法，必须传入el参数，参数值为当前元素
+> * init里面得click方法，可获取点击选中得表情数据
+> * $.emoji.converImg(str) 此方法可以将带有表情value得字段转换成图片

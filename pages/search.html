@@ -185,42 +185,15 @@
                        <p>大家都在看</p>
                    </div>
                    <div class="read-classify">
-                       <a href="" class="classify-link-one clearfix">
-                           <p class="book-label-read">倾国倾城</p>
-                           <div class="tri-right"></div>
-                       </a>
-                       <a href="" class="classify-link-two clearfix">
-                           <div class="tri-left"></div>
-                           <p class="book-label-read">腐宅</p>
-                       </a>
-                       <a href="" class="classify-link-three clearfix">
-                           <p class="book-label-read">倾国倾城</p>
-                           <div class="tri-right"></div>
-                       </a>
-                       <a href="" class="classify-link-four clearfix">
-                           <div class="tri-left"></div>
-                           <p class="book-label-read">腐宅</p>
-                       </a>
-                       <a href="" class="classify-link-five clearfix">
-                           <p class="book-label-read">倾国倾城</p>
-                           <div class="tri-right"></div>
-                       </a>
-                       <a href="" class="classify-link-six clearfix">
-                           <p class="book-label-read">倾国倾城</p>
-                           <div class="tri-right"></div>
-                       </a>
-                       <a href="" class="classify-link-seven clearfix">
-                           <div class="tri-left"></div>
-                           <p class="book-label-read">腐宅</p>
-                       </a>
-                       <a href="" class="classify-link-eight clearfix">
-                           <p class="book-label-read">倾国倾城</p>
-                           <div class="tri-right"></div>
-                       </a>
-                       <a href="" class="classify-link-nine clearfix">
-                           <p class="book-label-read">倾国倾城</p>
-                           <div class="tri-right"></div>
-                       </a>
+                       <a class="lc-tags" href="#">倾国倾城</a>
+                       <a class="lc-tags" href="#">腐宅</a>
+                       <a class="lc-tags" href="#">完结</a>
+                       <a class="lc-tags" href="#">总裁</a>
+                       <a class="lc-tags" href="#">倾国倾城</a>
+                       <a class="lc-tags" href="#">倾城暖昏</a>
+                       <a class="lc-tags" href="#">都市</a>
+                       <a class="lc-tags" href="#">穿越</a>
+                       <a class="lc-tags" href="#">小鲜肉</a>
                    </div>
                </div>
                <!--本周推荐 -->
@@ -323,5 +296,19 @@
         </div>
     </div>
 </div>
+<script src="../static/js/jquery-1.12.2.min.js"></script>
+<script src="../components/tagcloud/index.js"></script>
+<script>
+    /*3D标签云*/
+    tagcloud({
+        selector: ".read-classify",  //元素选择器
+        fontsize: 14,       //基本字体大小, 单位px
+        radius: 70,         //滚动半径, 单位px
+        mspeed: "normal",   //滚动最大速度, 取值: slow, normal(默认), fast
+        ispeed: "normal",   //滚动初速度, 取值: slow, normal(默认), fast
+        direction: 135,     //初始滚动方向, 取值角度(顺时针360): 0对应top, 90对应left, 135对应right-bottom(默认)...
+        keep: false          //鼠标移出组件后是否继续随鼠标滚动, 取值: false, true(默认) 对应 减速至初速度滚动, 随鼠标滚动
+    });
+</script>
 </body>
 </html>

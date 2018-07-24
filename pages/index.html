@@ -13,7 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../static/css/base.css" />
     <link rel="stylesheet" type="text/css" href="../static/icon/icon.css" />
     <link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../components/swiper/swiper.css" />
     <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../components/layer/layer.css" />
     <style>
         .dialog .dialog-container {
             position: fixed;
@@ -163,7 +165,7 @@
     </style>
 </head>
 
-<body class="container">
+<body class="myContainer">
     <div class="wrapper">
         <img src="../static/img/container-bg.png" class="img-fixed" />
         <!-- 公共头部 -->
@@ -313,16 +315,48 @@
                     </div>
                     <div class="clearfix hot-clear">
                         <div class="hot-list fleft">
-                            <div class="hot-banner"></div>
-                            <div class="book-name">云胡不喜</div>
-                            <div class="book-info clearfix">
-                                <p class="fleft book-item">【著】作者</p>
-                                <p class="fleft book-item">进度：已完结</p>
-                                <p class="fleft book-item">类型：宅斗</p>
-                                <p class="fleft book-item">字数：100万</p>
+                            <!-- <div class=" hot-list-item">
+                                <div class="hot-banner"><img src="../static/img/book.png"></div>
+                                <div class="hot-book-container">
+                                    <div class="book-name">大梨子</div>
+                                    <div class="book-info clearfix">
+                                        <p class="fleft book-item">【著作者</p>
+                                        <p class="fleft book-item">进度：已完结</p>
+                                        <p class="fleft book-item">类型：宅斗</p>
+                                        <p class="fleft book-item">字数：100万</p>
+                                    </div>
+                                    <div class="book-introduce">简然以为自己嫁个了一个普通男人，谁料这个男人摇身一变，成了她公司的总裁大人。不仅如此，他还是亚洲首富帝国集团最神秘的继承者</div>
+                                    <a href="#" class="book-link">书籍详情</a>
+                                </div>
                             </div>
-                            <div class="book-introduce">简然以为自己嫁个了一个普通男人，谁料这个男人摇身一变，成了她公司的总裁大人。不仅如此，他还是亚洲首富帝国集团最神秘的继承者</div>
-                            <a href="#" class="book-link">书籍详情</a>
+                            <div class=" hot-list-item">
+                                <div class="hot-banner"><img src="../static/img/book.png"></div>
+                                <div class="hot-book-container">
+                                    <div class="book-name">大梨子</div>
+                                    <div class="book-info clearfix">
+                                        <p class="fleft book-item">【著】作者</p>
+                                        <p class="fleft book-item">进度：已完结</p>
+                                        <p class="fleft book-item">类型：宅斗</p>
+                                        <p class="fleft book-item">字数：100万</p>
+                                    </div>
+                                    <div class="book-introduce">简然以为自己嫁个了一个普通男人，谁料这个男人摇身一变，成了她公司的总裁大人。不仅如此，他还是亚洲首富帝国集团最神秘的继承者</div>
+                                    <a href="#" class="book-link">书籍详情</a>
+                                </div>
+                            </div> -->
+                            <div class=" hot-list-item">
+                                <div class="hot-banner"><img src="../static/img/book.png"></div>
+                                <div class="hot-book-container">
+                                    <div class="book-name">大梨子</div>
+                                    <div class="book-info clearfix">
+                                        <p class="fleft book-item">【著】作者</p>
+                                        <p class="fleft book-item">进度：已完结</p>
+                                        <p class="fleft book-item">类型：宅斗</p>
+                                        <p class="fleft book-item">字数：100万</p>
+                                    </div>
+                                    <div class="book-introduce">简然以为自己嫁个了一个普通男人，谁料这个男人摇身一变，成了她公司的总裁大人。不仅如此，他还是亚洲首富帝国集团最神秘的继承者</div>
+                                    <a href="#" class="book-link">书籍详情</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="book-list fleft clearfix">
                             <div class="book-item fleft">
@@ -380,33 +414,61 @@
                 <div class="book-container">
                     <div class="book-list clearfix">
                         <div class="sharp-item fleft"><img src="../static/img/book.png" /></div>
-                        <div class="book-item fleft">
-                            <a href="book-detail.html">
-                                <div class="book-cover"><img src="../static/img/book.png" /></div>
-                                <div class="book-name">王妃千千岁</div>
-                                <div class="book-author">[著] 作者名</div>
-                            </a>
-                        </div>
-                        <div class="book-item fleft">
-                            <a href="book-detail.html">
-                                <div class="book-cover"><img src="../static/img/book.png" /></div>
-                                <div class="book-name">王妃千千岁</div>
-                                <div class="book-author">[著] 作者名</div>
-                            </a>
-                        </div>
-                        <div class="book-item fleft">
-                            <a href="book-detail.html">
-                                <div class="book-cover"><img src="../static/img/book.png" /></div>
-                                <div class="book-name">王妃千千岁</div>
-                                <div class="book-author">[著] 作者名</div>
-                            </a>
-                        </div>
-                        <div class="book-item fleft">
-                            <a href="book-detail.html">
-                                <div class="book-cover"><img src="../static/img/book.png" /></div>
-                                <div class="book-name">王妃千千岁</div>
-                                <div class="book-author">[著] 作者名</div>
-                            </a>
+                        <div class="book-subList swiper-container swiper-container-horizontal swiper-container-ios">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn-next icon-color icon-next" tabindex="0" role="button" aria-label="Next slide"></div>
+                            <div class="btn-prev icon-color icon-prev" tabindex="0" role="button" aria-label="Previous slide">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -718,36 +780,62 @@
                 <div class="book-container">
                     <div class="book-list clearfix">
                         <div class="end-book-item fleft"><img src="../static/img/book.png" /></div>
-                        <div class="book-item fleft">
-                            <a href="book-detail.html">
-                                <div class="book-cover"><img src="../static/img/book.png" /></div>
-                                <div class="book-name">王妃千千岁</div>
-                                <div class="book-author">[著] 作者名</div>
-                            </a>
+                        <div class="book-subList swiper-container swiper-container-horizontal swiper-container-ios">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide book-item">
+                                    <a href="book-detail.html">
+                                        <div class="book-cover"><img src="../static/img/book.png" /></div>
+                                        <div class="book-name">王妃千千岁</div>
+                                        <div class="book-author">[著] 作者名</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn-next icon-color icon-next" tabindex="0" role="button" aria-label="Next slide"></div>
+                            <div class="btn-prev icon-color icon-prev" tabindex="0" role="button" aria-label="Previous slide">
+                            </div>
                         </div>
-                        <div class="book-item fleft">
-                            <a href="book-detail.html">
-                                <div class="book-cover"><img src="../static/img/book.png" /></div>
-                                <div class="book-name">王妃千千岁</div>
-                                <div class="book-author">[著] 作者名</div>
-                            </a>
-                        </div>
-                        <div class="book-item fleft">
-                            <a href="book-detail.html">
-                                <div class="book-cover"><img src="../static/img/book.png" /></div>
-                                <div class="book-name">王妃千千岁</div>
-                                <div class="book-author">[著] 作者名</div>
-                            </a>
-                        </div>
-                        <div class="book-item fleft">
-                            <a href="book-detail.html">
-                                <div class="book-cover"><img src="../static/img/book.png" /></div>
-                                <div class="book-name">王妃千千岁</div>
-                                <div class="book-author">[著] 作者名</div>
-                            </a>
-                        </div>
-                        <div class="btn-prev icon-color icon-prev"></div>
-                        <div class="btn-next icon-color icon-next"></div>
                     </div>
                 </div>
             </div>
@@ -946,13 +1034,16 @@
     </div>
     <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../components/layer/layer.js"></script>
-    <!-- <script type="text/javascript" src="../components/login/login.js"></script> -->
+    <script type="text/javascript" src="../static/js/slick.js"></script>
     <script type="text/javascript" src="../components/swipe/swipe.js"></script>
+    <script type="text/javascript" src="../components/swiper/swiper.min.js"></script>
     <script>
         var page = {
             init: function() {
                 this.banner();
                 this.login();
+                this.bindEvent();
+                this.slide();
             },
             banner: function() {
                 new lcSwipe("banner", {});
@@ -964,7 +1055,7 @@
                         title: false,
                         closeBtn: 0,
                         shadeClose: true,
-                        skin: 'container',
+                        skin: 'myContainer',
                         content: '<div class="dialog">' +
                             '<div class="dialog-container">' +
                             '<div class="dialog-logo"><img src="../static/img/s-logo.png" /></div>' +
@@ -1007,8 +1098,22 @@
                         }
                     });
                 })
-            }
+            },
+            bindEvent: function() {
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    loopFillGroupWithBlank: true,
+                    navigation: {
+                        nextEl: '.btn-next',
+                        prevEl: '.btn-prev',
+                    },
+                });
 
+            },
+            slide: function() {
+
+            }
         }
         page.init();
     </script>

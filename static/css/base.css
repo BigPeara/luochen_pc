@@ -57,7 +57,7 @@ img {
 }
 
 body {
-    font-family: PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    font-family: Microsoft YaHei PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
     text-align: left;
     color: #333;
     background: #f8f2f2;
@@ -89,18 +89,18 @@ a {
 /* a:hover{color: #FF4192;} */
 
 textarea {
-    font: 14px/1.8 PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    font: 14px/1.8 Microsoft YaHei PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
     resize: none;
     outline: 0
 }
 
 select {
-    font-family: PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif
+    font-family: Microsoft YaHei PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif
 }
 
 button,
 input {
-    font-family: PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    font-family: Microsoft YaHei PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
     border: none;
     outline: 0
 }
