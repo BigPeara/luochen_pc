@@ -172,8 +172,9 @@
             </div>
             <!-- 书本列表 -->
             <div class="page-container bookList-container">
-                <div class="book-container">
-                    <div class="book-list">
+                <div class="book-container ">
+                    <div class="book-title-name">作品列表</div>
+                    <div class="book-list ">
                         <div class="book-item clearfix">
                             <div class="fleft clearfix">
                                 <div class="book-cover fleft">
@@ -284,8 +285,28 @@
                         </div>
                     </div>
                     <!-- 分页 -->
-                    <div class="paging">
-
+                    <div class="pagination">
+                        <div class="btn-pre">
+                            <img src="../static/img/prev.png" alt="">
+                        </div>
+                        <ul class="pager clearfix">
+                            <li class="number active" style="display: list-item;">1</li>
+                            <li class="number" style="display: list-item;">2</li>
+                            <li class="number" style="display: list-item;">3</li>
+                            <li class="number" style="display: list-item;">4</li>
+                            <li class="number" style="display: list-item;">5</li>
+                            <li style="display: list-item;">...</li>
+                            <li class="number" style="display: list-item;">11</li>
+                            <li style="display: none;"></li>
+                            <li style="display: none;"></li>
+                        </ul>
+                        <div class="btn-next can-abled">
+                            <img src="../static/img/next.png" alt="">
+                        </div>
+                        <div class="jump-number">
+                            <input type="text" value="1">
+                        </div>
+                        <div class="jump">GO</div>
                     </div>
                 </div>
 
@@ -403,11 +424,23 @@
         </div>
     </div>
     <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../components/pagination/index.js"></script>
     <script type="text/javascript">
         var page = {
             init: function() {
                 this.bindEvent();
                 this.showMore();
+                this.pagination();
+            },
+            pagination: function() {
+                $('.pagination').pagination({
+                    total: 11,
+                    pageSize: 1,
+                    currentPage: 1,
+                    change: function(val) {
+                        console.log("change值：", val)
+                    }
+                })
             },
             bindEvent: function() {
                 $(".selected-item .classify-bar").click(function() {
@@ -416,8 +449,8 @@
                 })
             },
             showMore: function() {
-                $('.classify-open').on('click',function () {
-                    if ($('.classify-collect').css('display')=='none') {
+                $('.classify-open').on('click', function() {
+                    if ($('.classify-collect').css('display') == 'none') {
                         $(".classify-collect").slideDown(100);
                         $(this).addClass('active');
                     } else {

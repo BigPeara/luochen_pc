@@ -426,16 +426,16 @@
                                 <p class="book-introduce-title">简介</p>
                                 <p class="book-introduce-container">
                                     家族少主，天生废魂，在机缘巧合之下，觉醒了太古神秘的战神之魂后，一路逆袭，邂逅仙姿美女，觉醒了太古，在机缘巧合之下，觉醒了太古神秘的战神之魂后，一路逆袭，邂逅仙姿美女，觉醒了太古神秘的战神之魂后，一路逆袭，邂逅仙，一路逆袭，邂逅仙姿美女，觉醒了太古神秘的战神之魂后，一路逆袭，邂逅仙姿美女，神秘的战神之魂后，一路逆袭，邂逅仙姿美女，
-                                <p class="open-close">
-                                    <span class="open">
+                                    <p class="open-close">
+                                        <span class="open">
                                         <i class="book-show-text">展开</i>
                                         <i class="icon-more icon-down"></i>
                                     </span>
-                                    <span class="close">
+                                        <span class="close">
                                         <i class="book-show-text">收起</i>
                                         <i class="icon-more icon-top"></i>
                                     </span>
-                                </p>
+                                    </p>
                             </div>
                             <div class="book-label clearfix">
                                 <p class="book-label-item fleft">标签</p>
@@ -530,7 +530,7 @@
                                 <span class="reward-line">|</span>
                                 <span>推荐票</span>
                             </p>
-                            <p class="reward-item-ticket">打赏人数</p>
+                            <p class="reward-item-ticket">本周票数</p>
                             <p class="reward-item-number">119</p>
                             <p class="reward-item-rank">排名110</p>
                             <div class="reward-item-icon">
@@ -546,7 +546,7 @@
                                 <span class="reward-line">|</span>
                                 <span>评分票</span>
                             </p>
-                            <p class="reward-item-ticket">本周票数</p>
+                            <p class="reward-item-ticket">打赏人数</p>
                             <p class="reward-item-number">8</p>
                             <p class="reward-item-rank"></p>
                             <div class="reward-item-icon">
@@ -971,13 +971,13 @@
                     return false;
                 }
                 page.introduction = len;
-                $(".book-introduce-container").text($.ellipsis(len,130));
+                $(".book-introduce-container").text($.ellipsis(len, 130));
                 $(".open").click(function() {
                     $(".book-introduce-container").text(page.introduction);
                     $(".book-introd").removeClass("book-open-introd").addClass("book-close-introd");
                 })
                 $(".close").click(function() {
-                    $(".book-introduce-container").text($.ellipsis(len,130));
+                    $(".book-introduce-container").text($.ellipsis(len, 130));
                     $(".book-introd").removeClass("book-close-introd").addClass("book-open-introd");
                 })
             },

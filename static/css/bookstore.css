@@ -22,7 +22,8 @@
 .classify-container .selected-item {
     width: 878px;
 }
-.classify-collect{
+
+.classify-collect {
     display: none;
 }
 
@@ -78,16 +79,30 @@
     transform: rotate(180deg);
     transition: all .3s;
 }
-.classify-container .classify-open.active img{
+
+.classify-container .classify-open.active img {
     transform: rotate(0deg);
     transition: all .3s;
 }
+
 
 /*书本列表*/
 
 .bookList-container .book-container {
     background-color: #fff;
     margin-bottom: 20px;
+}
+
+.bookList-container .book-container .book-title-name {
+    font-size: 16px;
+    color: #333;
+    padding: 20px 0 0 30px;
+    width: 100%;
+}
+
+.bookList-container .book-container .pagination {
+    padding: 0 0 30px 0;
+    text-align: center;
 }
 
 .bookList-container .book-container .book-list {
@@ -110,7 +125,7 @@
     width: 640px;
 }
 
-.bookList-container .book-container .book-info a:hover{
+.bookList-container .book-container .book-info a:hover {
     color: #FF4192;
 }
 

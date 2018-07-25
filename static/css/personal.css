@@ -1,3 +1,9 @@
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder{
+    color:    #999;
+}
 .user-center-container{
     margin: 20px 0;
 }
@@ -764,7 +770,14 @@ color: #999;
     border-radius: 13px;
 }
 .currency-info-detial .remainder .zeng_bi{
+    margin-right: 4px;
     margin-left: 10px;
+    font-size: 16px;
+}
+
+.currency-info-detial .remainder .luochen_bi{
+    margin-right: 4px;
+    font-size: 16px;
 }
 .currency-info-detial .ticket{
     width: 108px;
@@ -944,16 +957,22 @@ color: #999;
     height: 33px;
     border: 1px solid #E8E8E8;
     width: 133px;
-    padding-left: 25px;
+    padding-left: 10px;
     font-size: 14px;
     color: #333;
     float: left;
+}
+.layer-bound .phone-verification{
+    width: 158px;
+}
+.layer-bound .phone-import{
+    width: 165px;
 }
 .text-verification{
     height: 33px;
     border: 1px solid #E8E8E8;
     width: 264px;
-    padding-left: 25px;
+    padding-left: 10px;
     font-size: 14px;
     color: #333;
     float: left;
